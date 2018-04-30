@@ -131,7 +131,7 @@ form.RegisterForm {
 
 #footer .login > h1
 {
-display:none;
+display:none;   
 }
 
 .login h1 {
@@ -265,6 +265,13 @@ div#register_footer > .hbspt-form
 {
     bottom:-35px;
     zoom:0.80;
+}
+    
+    #footer .login {
+
+    bottom: 370px;
+
+    zoom: 0.6;
 }
 }
 @media only screen and (max-width: 467px)

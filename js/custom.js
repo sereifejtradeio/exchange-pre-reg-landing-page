@@ -598,11 +598,14 @@ var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
 
 $('#play').show();
+        $('#headline').show();
+        
 		}
 
 		else {
 
 $('#play').hide();
+            $('#headline').hide();
 		}
     
 	});

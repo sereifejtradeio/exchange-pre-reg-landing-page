@@ -1,0 +1,107 @@
+div#register_footer > .hbspt-form {
+    bottom: 180px;
+}
+
+.hbspt-form {
+/*     bottom: 70px; */
+    position: absolute;
+    left: 7px;
+    right: 0;
+}
+
+form#hsForm_8818173b-5098-40d4-86e9-f9bb88d06fde {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+div#hbspt-form-1524657859878-2580029311 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.hs_submit.hs-submit {
+    display: inline-block;
+    vertical-align: middle;
+  margin-bottom: 14px;
+    }
+
+input.hs-button.primary.large {
+    display: block;
+}
+
+fieldset.form-columns-2 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+/*     top:19px; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+span.hs-form-required {
+    display: none;
+}
+
+input#email-8818173b-5098-40d4-86e9-f9bb88d06fde,
+input#firstname-8818173b-5098-40d4-86e9-f9bb88d06fde {
+    padding: 9px;
+    background: #ffffff6b;
+    font-size: 20px;
+    color: white;
+    text-shadow: black 0px 0px 2px;
+}
+
+
+
+ul.hs-error-msgs.inputs-list li label {
+    color:#ffb0ac !important;
+    text-shadow: black 0px 0px 1px;
+  position:absolute;
+}
+
+input.hs-button.primary.large {
+    padding: 14px 47px;
+    background-color: #d76468 !important;
+    background-image: none;
+    border: none !important;
+    text-shadow: black 0px 0px 0px !important;
+    font-family: "Montserrat" !important;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+input.hs-button.primary.large:hover
+{
+box-shadow:#d76468 0px 0px 10px 0px !important;
+}
+
+@media only screen and (max-width: 764px)
+{
+#register_footer h2 {
+    top: -7px;
+}
+
+div#register_footer > .hbspt-form
+{
+    bottom:-35px;
+    zoom:0.79;
+}
+
+.hbspt-form
+{
+    bottom:-35px;
+    zoom:0.80;
+}
+}
+@media only screen and (max-width: 467px)
+{
+  #play 
+{
+    position:relative;
+		top:0;
+  	display:none;
+}
+
+}

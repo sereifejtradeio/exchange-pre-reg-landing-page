@@ -197,8 +197,8 @@ var particleCanvas = new ParticleNetwork(canvasDiv, options);
 			];
 
 			//define charts
-			var ctx = document.getElementById("chart-area").getContext("2d");
-			var ctx2 = document.getElementById("chart-area2").getContext("2d");
+//			var ctx = document.getElementById("chart-area").getContext("2d");
+//			var ctx2 = document.getElementById("chart-area2").getContext("2d");
 			window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
 			window.myDoughnut = new Chart(ctx2).Doughnut(doughnutData2, {responsive : true});
 

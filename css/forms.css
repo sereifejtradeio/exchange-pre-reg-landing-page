@@ -266,14 +266,14 @@ div#register_footer > .hbspt-form
     bottom:-35px;
     zoom:0.80;
 }
-    
-    #footer .login {
+        #footer .login {
 
     bottom: 370px;
+zoom:0.6;
+    }
+  
+}
 
-    zoom: 0.6;
-}
-}
 @media only screen and (max-width: 467px)
 {
   #play 
@@ -282,5 +282,11 @@ div#register_footer > .hbspt-form
 		top:0;
   	display:none;
 }
+    .login
+    {
+    zoom: 0.7;
+    top: 8px;
+    }
+
 
 }

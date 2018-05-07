@@ -136,7 +136,7 @@ set_csrf_token();
         
         <div id="json-register-error"></div>
         
-<div id="json-register-success" style="display: none; color: #4F8A10; background-color: #DFF2BF; text-align: left; padding: 12px;">Thank you for registering!</div>
+        <div id="json-register-success">Thank you for registering!</div>
         
         <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
         <input type="hidden" name="registration_source" id="registration_source" value="Pre-Registration">

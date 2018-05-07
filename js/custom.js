@@ -767,8 +767,8 @@ $( "#pre-register-top-btn" ).click(function(e) {
             $(".top_form_confirm_password_error").hide();
             $(".top_form_captcha_error").hide();
 
-            $('#json-error').hide();
-            $('#json-success').show();
+            $('#json-error-success').hide();
+            $('#json-register-success').show();
             $('#RegisterFormTop').each(function(){
                 this.reset();
             });

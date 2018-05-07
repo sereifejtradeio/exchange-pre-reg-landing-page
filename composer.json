@@ -1,0 +1,16 @@
+{
+    "name": "user/exchange",
+    "description": "Exchange pre registration landing page",
+    "require": {
+        "ext-curl": "^7.1",
+        "lib-curl": "^7.54",
+        "ext-mbstring": "^7.1",
+	"php": "^7.0"
+    },
+    "authors": [
+        {
+            "name": "Stavros Ereifej",
+            "email": "stavros.ereifej@trade.io"
+        }
+    ]
+}

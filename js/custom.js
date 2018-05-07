@@ -11,23 +11,23 @@ var options = {
 var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
 	//variables
-	templateAnimationSpeed = 100;
-	flag = 0;
-	windowHeight = $(window).height();
-	notificationTime = 2500;
-	errorPointTime = 2500;
-	registerFeaturesDelay = 250;
-	registerFeaturesAnimationTime = 250;
-	chartFlag = false;
-	entourageFlag = false;
-	count = 1;
-	videoSrc = 'https://fast.wistia.net/embed/iframe/7hyh7a24uc';
-	fillInEmail = false;
-	emailViaNewsletter = getQueryVariable('email');
-	hideMenuT = false;
+	var templateAnimationSpeed = 100;
+	var flag = 0;
+	var windowHeight = $(window).height();
+	var notificationTime = 2500;
+	var errorPointTime = 2500;
+	var registerFeaturesDelay = 250;
+	var registerFeaturesAnimationTime = 250;
+	var chartFlag = false;
+	var entourageFlag = false;
+	var count = 1;
+	var videoSrc = 'https://fast.wistia.net/embed/iframe/7hyh7a24uc';
+	var fillInEmail = false;
+	var emailViaNewsletter = getQueryVariable('email');
+	var hideMenuT = false;
 
 	//if there's an action
-	action = getQueryVariable('action');
+	var action = getQueryVariable('action');
 
 	if($('#mobile-detection').is(':visible')){ }
 	else {
@@ -618,8 +618,177 @@ $('#play').hide();
             return false;
 
     });
+    
+    
+/* Register */
+    
+function validateEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+
+function validatePassword(password) {
+    var regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+_!@#$%^&*.,?]).{8}/;
+    return regex.test(password);
+}
+    
+$( "#pre-register-top-btn" ).click(function(e) {
+    e.preventDefault();
+
+    var username = $('#top_form_username').val();
+    var email = $('#top_form_email').val();
+    var password = $('#top_form_password').val();
+    var confirmPassword = $('#top_form_confirm_password').val();
+    var csrfToken = $('#csrf_token').val();
+    var token = $("#g-recaptcha-response").val();
+    var registrationSource = $('#registration_source').val();
+
+    if( username == '' ) {
+        $('#top_form_username').css({"border-color":"#d76468"});
+        $('.top_form_useraname_error').show();
+    } else {
+        $('#top_form_username').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_useraname_error').hide();
+    }
+
+    if( email == '' ) {
+        $('#top_form_email').css({"border-color":"#d76468"});
+        $('.top_form_email_error').show();
+    } else {
+        $('#top_form_email').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_email_error').hide();
+    }
+
+    if( !validateEmail(email) ) {
+        $('#top_form_email').css({"border-color":"#d76468"});
+        $('.top_form_email_error').show();
+    } else {
+        $('#top_form_email').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_email_error').hide();
+    }
+
+    if( password == '' ) {
+        $('#top_form_password').css({"border-color":"#d76468"});
+        $('.top_form_password_error').show();
+    } else {
+        $('#top_form_password').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_password_error').hide();
+    }
+
+    if( !validatePassword(password) ) {
+        $('#top_form_password').css({"border-color":"#d76468"});
+        $('.top_form_password_error').show();
+    } else {
+        $('#top_form_password').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_password_error').hide();
+    }
+
+    if( confirmPassword == '' ) {
+        $('#top_form_confirm_password').css({"border-color":"#d76468"});
+        $('.top_form_confirm_password_error').show();
+    } else {
+        $('#top_form_confirm_password').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_confirm_password_error').hide();
+    }
+
+    if( !validatePassword(confirmPassword) ) {
+        $('#top_form_confirm_password').css({"border-color":"#d76468"});
+        $('.top_form_confirm_password_error').show();
+    } else {
+        $('#top_form_confirm_password').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_confirm_password_error').hide();
+    }
+
+    if( (password != '' && confirmPassword !='') && (password != confirmPassword) ) {
+        $('#top_form_confirm_password').css({"border-color":"#d76468"});
+        $('.top_form_passwords_do_not_match_error').show();
+    } else if( (password != '' && confirmPassword !='') && (password == confirmPassword) ) {
+        $('#top_form_confirm_password').css({"border":"1px solid rgba(0, 0, 0, 0.3)"});
+        $('.top_form_passwords_do_not_match_error').hide();
+    }
+
+
+    //Ajax call for form submission
+    var dataString = 'username='+ username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource;
+
+    $.ajax({
+    type: "POST",
+    url: "ajax/submit.php",
+    data: dataString,
+    success: function(data) {
+
+        //$('#json-success').hide();
+
+        var obj = jQuery.parseJSON( data );
+
+        if( obj.error ) {
+
+            grecaptcha.reset(recaptcha1);
+            
+            $("#json-register-error").html('');
+
+            $("#json-register-error").append('*' + obj.error);
+
+            if( Array.isArray(obj.error) ) {
+
+                $.each(obj.error, function(i, item) {
+
+                    $(".top_form_" + item.element + "_error").html('');
+
+                    $(".top_form_" + item.element + "_error").append('*' + item.message + '<br/>');
+
+                    $(".top_form_" + item.element + "_error").show();
+
+                });
+
+            } else {
+
+                $(".top_form_useraname_error").hide();
+                $(".top_form_email_error").hide();
+                $(".top_form_password_error").hide();
+                $(".top_form_confirm_password_error").hide();
+                $(".top_form_captcha_error").hide();
+
+                $("#json-register-error").html('');
+
+                $("#json-register-error").append('*' + obj.error);
+
+                if( username !='' && email !='' && password !='' && confirmPassword !='' ) {
+                    $("#json-register-error").show();
+                }
+            }
+
+
+        } else {
+
+            $(".top_form_useraname_error").hide();
+            $(".top_form_email_error").hide();
+            $(".top_form_password_error").hide();
+            $(".top_form_confirm_password_error").hide();
+            $(".top_form_captcha_error").hide();
+
+            $('#json-error').hide();
+            $('#json-success').show();
+            $('#RegisterFormTop').each(function(){
+                this.reset();
+            });
+
+            grecaptcha.reset(recaptcha1);
+
+//            if( eval({$redirect}) ) {
+//                document.location = 'https://somethingbigiscoming.trade.io/thank-you-pre-registration';
+//            } else {
+//                setTimeout(function(){ document.location = 'affiliates'; }, 2000);
+//            }
+
+        }
+
+    }
+    });
+});
 
 });
+
 
 
 function calcPrices(){

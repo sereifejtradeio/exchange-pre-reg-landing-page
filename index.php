@@ -1,3 +1,19 @@
+<?php 
+function check_start_session() {
+	if(!session_id()) {
+		session_start();
+	}
+}
+
+function set_csrf_token() {
+    $_SESSION['previous_csrf_token'] = $_SESSION['csrf_token'];
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+check_start_session();
+set_csrf_token();
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,6 +41,9 @@
 <!--Particles Entrty-->
 <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
     
+<!--Google reCaptcha-->
+<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
+    
 <!-- charts -->
 <script type="text/javascript" src="js/Chart.js"></script>
 
@@ -51,8 +70,6 @@
     
 <!--AOS library-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    
-
 
 </head>
 <body cz-shortcut-listen="true">
@@ -97,7 +114,7 @@
 
 		<!-- header headline -->
 		<div id="headline" data-aos="fade-down" data-aos-delay="300">
-
+            
 			<!-- big headline -->
 			<span class="font-bold">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light" style="font-weight: 100;font-size:30px">IS NOW OPEN FOR PRE REGISTRATION</span>
 
@@ -115,10 +132,44 @@
 -->
  <div class="login">
 <!--	<h1>Pre-register Now</h1>-->
-    <form method="post" class="RegisterForm">
-    	<input type="text" name="u" placeholder="Name" required="required" />
-        <input type="email" name="p" placeholder="Email" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+    <form method="post" class="RegisterForm" id="RegisterFormTop" action="">
+        
+        <div id="json-register-error"></div>
+        
+<div id="json-register-success" style="display: none; color: #4F8A10; background-color: #DFF2BF; text-align: left; padding: 12px;">Thank you for registering!</div>
+        
+        <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+        <input type="hidden" name="registration_source" id="registration_source" value="Pre-Registration">
+        
+        <div class="field-left top-username">
+            <input type="text" name="top_form_username" id="top_form_username" placeholder="Username" required="required" />
+            <div class="top_form_username_error"></div>
+        </div>
+        
+        <div class="field-right top-email">
+            <input type="email" name="top_form_email" id="top_form_email" placeholder="Email" required="required" />
+            <div class="top_form_email_error"></div>
+        </div>
+        
+        <div class="field-left top-password">
+            <input type="password" name="top_form_password" id="top_form_password" placeholder="Password" required="required" />
+            <div class="top_form_password_error"></div>
+        </div>
+        
+        <div class="field-right top-confirm-password">
+            <input type="password" name="top_form_confirm_password" id="top_form_confirm_password" placeholder="Retype Password" required="required" />
+            <div class="top_form_confirm_password_error"></div>
+            <div class="top_form_passwords_do_not_match_error"></div>
+        </div>
+        
+        <div class="field-right top-captcha">
+            <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptcha"></div>
+            <div class="top_form_captcha_error"></div>
+        </div>
+        
+        <div class="clearfix">
+            <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+        </div>
     </form>
 </div>
             
@@ -378,5 +429,29 @@
 	</div>
 
 </div>
+<script>
+var recaptcha1;
+var recaptcha2;
 
+var myCallBack = function() {
+
+
+    if( document.getElementById('gReCaptcha') !=null ) {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        recaptcha1 = grecaptcha.render('gReCaptcha', {
+          'sitekey' : '6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8', //Replace this with your Site key
+          'theme' : 'light'
+        });
+    }
+
+    if( document.getElementById('gReCaptchaHorizontal') !=null ) {
+        //Render the recaptcha2 on the element with ID "recaptcha2"
+        recaptcha2 = grecaptcha.render('gReCaptchaHorizontal', {
+          'sitekey' : '6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8', //Replace this with your Site key
+          'theme' : 'light'
+        });
+    }
+
+};    
+</script>
 </body></html>

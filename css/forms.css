@@ -3,7 +3,41 @@ form.RegisterForm {
     display: inline-block;
     margin: auto;
     text-align: center;
-     font-family: "Montserrat" !important;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    width: 735px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#json-register-success {
+    display: none; 
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    text-align: left; 
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#json-register-error {
+    display: none; 
+    text-align: left; 
+    padding: 15px; 
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin-bottom: 25px;
+    color: #a94442;
+    font-size: 14px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .RegisterForm input:focus {
@@ -106,10 +140,19 @@ form.RegisterForm {
   background-color: #d6979a;
 }
 .btn-block {
-  max-width: 300px;
+
   margin: auto;
   text-align: center;
-  width: 100%;
+  width: 330px;
+  margin-top: 20px;
+}
+
+.field-left {
+    float: left;
+}
+
+.field-right {
+    float: right;
 }
 
 
@@ -148,7 +191,7 @@ input {
   border: none;
   outline: none;
   padding: 10px;
-  margin: 18px;
+  margin: 18px 0px 5px 0px;
   font-size: 20px;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -225,7 +268,21 @@ input#firstname-8818173b-5098-40d4-86e9-f9bb88d06fde {
     text-shadow: black 0px 0px 2px;
 }
 
+.top_form_username_error,
+.top_form_email_error,
+.top_form_password_error,
+.top_form_confirm_password_error,
+.top_form_passwords_do_not_match_error {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    display: none;
+    font-size: 12px;
+    color: #d76468;
+    text-align: left;
+    width: 310px;
+    line-height: 18px;
+    letter-spacing: 1px;
 
+}
 
 ul.hs-error-msgs.inputs-list li label {
     color:#ffb0ac !important;
@@ -271,6 +328,27 @@ div#register_footer > .hbspt-form
     bottom: 370px;
 zoom:0.6;
     }
+    
+    .field-left {
+        float: none;
+    }
+    
+    .field-right {
+        float: none;
+    }
+    
+    form.RegisterForm {
+        width: 100%;
+    }
+    
+    .top_form_useraname_error, 
+    .top_form_email_error, 
+    .top_form_password_error, 
+    .top_form_confirm_password_error, 
+    .top_form_passwords_do_not_match_error {
+        width: 330px;
+        margin: 0 auto;
+    }
   
 }
 
@@ -288,5 +366,16 @@ zoom:0.6;
     top: 8px;
     }
 
+    .field-left {
+        float: none;
+    }
+    
+    .field-right {
+        float: none;
+    }
+    
+    form.RegisterForm {
+        width: 100%;
+    }
 
 }

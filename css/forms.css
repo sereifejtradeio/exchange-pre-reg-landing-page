@@ -392,6 +392,10 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
     #register_footer {
         height: auto;
     }
+    
+    #headline {
+        font-size: 24px;
+    }
   
 }
 
@@ -404,6 +408,14 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
         left: auto;
         right: 15px;
         z-index: 99999;
+    }
+    
+    #headline {
+        font-size: 18px;
+    }
+    
+    .btn-block {
+        margin-top: 0px;
     }
     
     .login
@@ -444,6 +456,10 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
     
     #register-logo {
         top: 130px;
+    }
+    
+    input {
+        margin: 5px 0px 0px 0px;
     }
 
 }

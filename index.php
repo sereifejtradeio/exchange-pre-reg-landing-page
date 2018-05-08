@@ -95,7 +95,7 @@
             <!-- header headline -->
             <div id="headline" data-aos="fade-down" data-aos-delay="300">
                <!-- big headline -->
-               <span class="font-bold">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light" style="font-weight: 100;font-size:30px">IS NOW OPEN FOR PRE REGISTRATION</span>
+               <span class="font-bold">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light">IS NOW OPEN FOR PRE REGISTRATION</span>
                <!--[if lte IE 8]>
                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                <![endif]-->

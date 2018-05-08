@@ -333,6 +333,11 @@ div#register_footer > .hbspt-form
     bottom:-35px;
     zoom:0.79;
 }
+    
+    .socialbar {
+
+        margin-top: 20px;
+    }
 
 .hbspt-form
 {
@@ -341,8 +346,7 @@ div#register_footer > .hbspt-form
 }
     #footer .login {
 
-        bottom: 1265px;
-        zoom:0.6;
+        bottom: auto;
     }
     
     .field-left {
@@ -379,19 +383,7 @@ div#register_footer > .hbspt-form
     }
     
     #register_footer {
-        height: 800px;
-    }
-    
-    .g-recaptcha {
-        transform:scale(0.70);
-        -webkit-transform:scale(0.70);
-        transform-origin:0 0;
-        -webkit-transform-origin:0 0;
-    }
-    
-    .g-recaptcha>div>div>iframe {
-         width: 435px;
-         height: 120px;
+        height: auto;
     }
   
 }
@@ -401,12 +393,11 @@ div#register_footer > .hbspt-form
   #play 
 {
     position:relative;
-		top:0;
+/*		top:0;*/
   	display:none;
 }
     .login
     {
-    zoom: 0.7;
     top: 8px;
     }
 
@@ -422,22 +413,11 @@ div#register_footer > .hbspt-form
         width: 100%;
     }
     
-    .g-recaptcha {
-        transform:scale(0.62);
-        -webkit-transform:scale(0.62);
-        transform-origin:0 0;
-        -webkit-transform-origin:0 0;
-    }
-    
-    .g-recaptcha>div>div>iframe {
-         width: 500px;
-         height: 165px;
-    }
-    
     .socialbar {
         margin: auto;
         width: 100%;
         text-align: center;
+        margin-top: 20px;
     }
     
     #copyright {
@@ -445,11 +425,15 @@ div#register_footer > .hbspt-form
         width: 100%;
         text-align: center;
         -webkit-transform: translate3d(0, 0, 0);
-        height: auto;
     }
     
     #copyright div {
         line-height: unset;
+        margin-top: 20px;
+    }
+    
+    #register-logo {
+        top: 130px;
     }
 
 }

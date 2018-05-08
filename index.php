@@ -162,7 +162,7 @@ set_csrf_token();
             <div class="top_form_passwords_do_not_match_error"></div>
         </div>
         
-        <div class="field-right top-captcha">
+        <div class="top-captcha">
             <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptcha"></div>
             <div class="top_form_captcha_error"></div>
         </div>
@@ -410,29 +410,29 @@ set_csrf_token();
         <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
         
         <div class="field-left top-username">
-            <input type="text" name="top_form_username" id="top_form_username_bottom" placeholder="Username" required="required" />
-            <div class="top_form_username_error_bottom"></div>
+            <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="Username" />
+            <div class="bottom_form_username_error"></div>
         </div>
         
         <div class="field-right top-email">
-            <input type="email" name="top_form_email" id="top_form_email_bottom" placeholder="Email" required="required" />
-            <div class="top_form_email_error"></div>
+            <input type="email" name="bottom_form_email" id="bottom_form_email" placeholder="Email" />
+            <div class="bottom_form_email_error"></div>
         </div>
         
         <div class="field-left top-password">
-            <input type="password" name="top_form_password" id="top_form_password_bottom" placeholder="Password" required="required" />
-            <div class="top_form_password_error"></div>
+            <input type="password" name="bottom_form_password" id="bottom_form_password" placeholder="Password" />
+            <div class="bottom_form_password_error"></div>
         </div>
         
         <div class="field-right top-confirm-password">
-            <input type="password" name="top_form_confirm_password" id="top_form_confirm_password_bottom" placeholder="Retype Password" required="required" />
-            <div class="top_form_confirm_password_error_bottom"></div>
-            <div class="top_form_passwords_do_not_match_error_bottom"></div>
+            <input type="password" name="bottom_form_confirm_password" id="bottom_form_confirm_password" placeholder="Retype Password" />
+            <div class="bottom_form_confirm_password_error"></div>
+            <div class="bottom_form_passwords_do_not_match_error"></div>
         </div>
         
         <div class="top-captcha">
             <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptchaBottom"></div>
-            <div class="top_form_captcha_error_bottom"></div>
+            <div class="bottom_form_captcha_error"></div>
         </div>
         
         <div class="clearfix">

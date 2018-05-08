@@ -626,11 +626,6 @@ $(document).ready(function() {
 
     });
 
-
-
-
-    /* Register Top Form */
-
     function validateEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
@@ -640,7 +635,8 @@ $(document).ready(function() {
         var regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-+_!@#$%^&*.,?]).{8}/;
         return regex.test(password);
     }
-
+    
+    /* Register Top Form */
     $("#pre-register-top-btn").click(function(e) {
         e.preventDefault();
 
@@ -758,7 +754,7 @@ $(document).ready(function() {
             data: dataString,
             success: function(data) {
 
-                $('#json-register-success').show();
+                $('#json-register-success').hide();
 
                 var obj = jQuery.parseJSON(data);
 
@@ -815,6 +811,188 @@ $(document).ready(function() {
                     });
 
                     grecaptcha.reset(recaptcha1);
+
+                }
+
+            }
+        });
+    });
+    
+    /* Register Bottom Form */
+    $("#pre-register-bottom-btn").click(function(e) {
+        e.preventDefault();
+
+        var username = $('#bottom_form_username').val();
+        var email = $('#bottom_form_email').val();
+        var password = $('#bottom_form_password').val();
+        var confirmPassword = $('#bottom_form_confirm_password').val();
+        var csrfToken = $('#csrf_token_bottom').val();
+        var token = $("#g-recaptcha-response-1").val();
+        var registrationSource = $('#registration_source_bottom').val();
+
+        if (username == '') {
+            $('#bottom_form_username').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_useraname_error').show();
+        } else {
+            $('#bottom_form_username').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_useraname_error').hide();
+        }
+
+        if (email == '') {
+            $('#bottom_form_email').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_email_error').show();
+        } else {
+            $('#bottom_form_email').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_email_error').hide();
+        }
+
+        if (!validateEmail(email)) {
+            $('#bottom_form_email').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_email_error').show();
+        } else {
+            $('#bottom_form_email').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_email_error').hide();
+        }
+
+        if (password == '') {
+            $('#bottom_form_password').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_password_error').show();
+        } else {
+            $('#bottom_form_password').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_password_error').hide();
+        }
+
+        if (!validatePassword(password)) {
+            $('#bottom_form_password').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_password_error').show();
+        } else {
+            $('#bottom_form_password').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_password_error').hide();
+        }
+
+        if (confirmPassword == '') {
+            $('#bottom_form_confirm_password').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_confirm_password_error').show();
+        } else {
+            $('#bottom_form_confirm_password').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_confirm_password_error').hide();
+        }
+
+        if (!validatePassword(confirmPassword)) {
+            $('#bottom_form_confirm_password').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_confirm_password_error').show();
+        } else {
+            $('#bottom_form_confirm_password').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_confirm_password_error').hide();
+        }
+
+        if ((password != '' && confirmPassword != '') && (password != confirmPassword)) {
+            $('#bottom_form_confirm_password').css({
+                "border-color": "#d76468"
+            });
+            $('.bottom_form_passwords_do_not_match_error').show();
+        } else if ((password != '' && confirmPassword != '') && (password == confirmPassword)) {
+            $('#bottom_form_confirm_password').css({
+                "border": "1px solid rgba(0, 0, 0, 0.3)"
+            });
+            $('.bottom_form_passwords_do_not_match_error').hide();
+        }
+
+
+        //Ajax call for form submission
+        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource;
+
+        $.ajax({
+            type: "POST",
+            url: "ajax/submit.php",
+            data: dataString,
+            success: function(data) {
+
+                $('#json-register-success-bottom').hide();
+
+                var obj = jQuery.parseJSON(data);
+
+                if (obj.error) {
+
+                    grecaptcha.reset(recaptcha2);
+
+                    $("#json-register-error-bottom").html('');
+
+                    $("#json-register-error-bottom").append('*' + obj.error);
+
+                    if (Array.isArray(obj.error)) {
+
+                        $.each(obj.error, function(i, item) {
+
+                            $(".bottom_form_" + item.element + "_error").html('');
+
+                            $(".bottom_form_" + item.element + "_error").append('*' + item.message + '<br/>');
+
+                            $(".bottom_form_" + item.element + "_error").show();
+
+                        });
+
+                    } else {
+
+                        $(".bottom_form_useraname_error").hide();
+                        $(".bottom_form_email_error").hide();
+                        $(".bottom_form_password_error").hide();
+                        $(".bottom_form_confirm_password_error").hide();
+                        $(".bottom_form_captcha_error").hide();
+
+                        $("#json-register-error-bottom").html('');
+
+                        $("#json-register-error-bottom").append('*' + obj.error);
+
+                        if (username != '' && email != '' && password != '' && confirmPassword != '') {
+                            $("#json-register-error-bottom").show();
+                        }
+                    }
+
+
+                } else {
+
+                    $(".bottom_form_useraname_error").hide();
+                    $(".bottom_form_email_error").hide();
+                    $(".bottom_form_password_error").hide();
+                    $(".bottom_form_confirm_password_error").hide();
+                    $(".bottom_form_captcha_error").hide();
+
+                    $('#json-error-success-bottom').hide();
+                    $('#json-register-success-bottom').show();
+                    $('#RegisterFormBottom').each(function() {
+                        this.reset();
+                    });
+
+                    grecaptcha.reset(recaptcha2);
 
                 }
 

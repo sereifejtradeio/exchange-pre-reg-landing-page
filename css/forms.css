@@ -339,10 +339,10 @@ div#register_footer > .hbspt-form
     bottom:-35px;
     zoom:0.80;
 }
-        #footer .login {
+    #footer .login {
 
-    bottom: 815px;
-zoom:0.6;
+        bottom: 1265px;
+        zoom:0.6;
     }
     
     .field-left {
@@ -381,6 +381,18 @@ zoom:0.6;
     #register_footer {
         height: 800px;
     }
+    
+    .g-recaptcha {
+        transform:scale(0.70);
+        -webkit-transform:scale(0.70);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+    }
+    
+    .g-recaptcha>div>div>iframe {
+         width: 435px;
+         height: 120px;
+    }
   
 }
 
@@ -408,6 +420,36 @@ zoom:0.6;
     
     form.RegisterForm {
         width: 100%;
+    }
+    
+    .g-recaptcha {
+        transform:scale(0.62);
+        -webkit-transform:scale(0.62);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+    }
+    
+    .g-recaptcha>div>div>iframe {
+         width: 500px;
+         height: 165px;
+    }
+    
+    .socialbar {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #copyright {
+        z-index: 300;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translate3d(0, 0, 0);
+        height: auto;
+    }
+    
+    #copyright div {
+        line-height: unset;
     }
 
 }

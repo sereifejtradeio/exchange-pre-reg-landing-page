@@ -2069,13 +2069,13 @@ div#footer {
     vertical-align: top;
     color: #ffffff;
     font-family: 'Montserrat', Helvetaica, Arial, sans-serif;
-/*    top: 20%;*/
+    top: 5%;
     position: relative;
 }
 
 #register-logo {
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 0;
     margin-top: -56px;
     text-align: center;

@@ -11,7 +11,8 @@ form.RegisterForm {
     clear: both;
 }
 
-#json-register-success {
+#json-register-success,
+#json-register-success-bottom {
     display: none; 
     color: #3c763d;
     background-color: #dff0d8;
@@ -25,7 +26,8 @@ form.RegisterForm {
     border-radius: 4px;
 }
 
-#json-register-error {
+#json-register-error,
+#json-register-error-bottom {
     display: none; 
     text-align: left; 
     padding: 15px; 
@@ -167,7 +169,7 @@ form.RegisterForm {
     width: 100%;
     margin: auto;
     text-align: center;
-    bottom: 398px;
+    bottom: 520px;
     top: unset;
 }
 
@@ -268,15 +270,23 @@ input#firstname-8818173b-5098-40d4-86e9-f9bb88d06fde {
     text-shadow: black 0px 0px 2px;
 }
 
+.top-captcha {
+    margin-top: 20px;
+    clear: both;
+    display: inline-block;
+}
+
 .top_form_username_error,
 .top_form_email_error,
 .top_form_password_error,
 .top_form_confirm_password_error,
-.top_form_passwords_do_not_match_error {
+.top_form_passwords_do_not_match_error,
+.top_form_captcha_error {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     display: none;
     font-size: 12px;
-    color: #d76468;
+/*    color: #d76468;*/
+    color: #ffffff;
     text-align: left;
     width: 310px;
     line-height: 18px;
@@ -309,7 +319,7 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
 @media only screen and (max-width: 764px)
 {
 #register_footer h2 {
-    top: -7px;
+    top: -75px;
 }
 
 div#register_footer > .hbspt-form
@@ -325,7 +335,7 @@ div#register_footer > .hbspt-form
 }
         #footer .login {
 
-    bottom: 370px;
+    bottom: 600px;
 zoom:0.6;
     }
     
@@ -345,9 +355,15 @@ zoom:0.6;
     .top_form_email_error, 
     .top_form_password_error, 
     .top_form_confirm_password_error, 
-    .top_form_passwords_do_not_match_error {
+    .top_form_passwords_do_not_match_error,
+    .top_form_captcha_error {
         width: 330px;
         margin: 0 auto;
+    }
+    
+    .top-captcha {
+        margin: 20px auto;
+        width: 310px;
     }
   
 }

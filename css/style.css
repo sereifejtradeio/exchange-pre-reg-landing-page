@@ -984,7 +984,7 @@ video {
     z-index: 100;
     margin: auto;
     width: 100%;
-    padding-top: 200px;
+    padding-top: 125px;
     position: absolute;
     top: 0;
     left: 0;
@@ -998,7 +998,7 @@ video {
 }
 
 #play {
-width: 64px;
+    width: 64px;
     height: 64px;
     background-image: url(../img/play.png);
     z-index: 200;
@@ -2054,7 +2054,7 @@ div#footer {
     display: table;
     height: 100%;
     width: 100%;
-    /* bottom: 10%; */
+    top: 5%;
 }
 
 
@@ -2069,7 +2069,7 @@ div#footer {
     vertical-align: top;
     color: #ffffff;
     font-family: 'Montserrat', Helvetaica, Arial, sans-serif;
-    top: 20%;
+/*    top: 20%;*/
     position: relative;
 }
 
@@ -2773,9 +2773,11 @@ div#footer {
     .slogan {
         display: none!important;
     }
+/*
     #register_footer {
         height: 300px!important;
     }
+*/
     #footer {
         box-shadow: 0 100px 0 #FFF;
     }

@@ -139,7 +139,7 @@ set_csrf_token();
         <div id="json-register-success">Thank you for registering!</div>
         
         <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-        <input type="hidden" name="registration_source" id="registration_source" value="Pre-Registration">
+        <input type="hidden" name="registration_source" id="registration_source" value="Exchange-Pre-Registration">
         
         <div class="field-left top-username">
             <input type="text" name="top_form_username" id="top_form_username" placeholder="Username" required="required" />
@@ -383,7 +383,7 @@ set_csrf_token();
 			</div>
 <h2 id="registerText">Pre-Register Now</h2>
 			<div id="register-logo" style="display: none;">
-				<div class="logo-btm"><a href="#"><img src="../img/footer-logo.png"></a></div>
+<!--				<div class="logo-btm"><a href="#"><img src="../img/footer-logo.png"></a></div>-->
 				<!-- <div class="register-btm"><a href="#" class="">Register a Free account</a></div> -->
 			</div>
                         <!--[if lte IE 8]>
@@ -399,11 +399,45 @@ set_csrf_token();
 </script>
 -->
 <div class="login">
-	<h1>Pre-register Now</h1>
-    <form method="post" class="RegisterForm">
-    	<input type="text" name="u" placeholder="Name" required="required" />
-        <input type="email" name="p" placeholder="Email" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+<!--	<h1>Pre-register Now</h1>-->
+    <form method="post" class="RegisterForm" id="RegisterFormBottom" action="">
+        
+        <div id="json-register-error-bottom"></div>
+        
+        <div id="json-register-success-bottom">Thank you for registering!</div>
+        
+        <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
+        <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
+        
+        <div class="field-left top-username">
+            <input type="text" name="top_form_username" id="top_form_username_bottom" placeholder="Username" required="required" />
+            <div class="top_form_username_error_bottom"></div>
+        </div>
+        
+        <div class="field-right top-email">
+            <input type="email" name="top_form_email" id="top_form_email_bottom" placeholder="Email" required="required" />
+            <div class="top_form_email_error"></div>
+        </div>
+        
+        <div class="field-left top-password">
+            <input type="password" name="top_form_password" id="top_form_password_bottom" placeholder="Password" required="required" />
+            <div class="top_form_password_error"></div>
+        </div>
+        
+        <div class="field-right top-confirm-password">
+            <input type="password" name="top_form_confirm_password" id="top_form_confirm_password_bottom" placeholder="Retype Password" required="required" />
+            <div class="top_form_confirm_password_error_bottom"></div>
+            <div class="top_form_passwords_do_not_match_error_bottom"></div>
+        </div>
+        
+        <div class="top-captcha">
+            <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptchaBottom"></div>
+            <div class="top_form_captcha_error_bottom"></div>
+        </div>
+        
+        <div class="clearfix">
+            <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+        </div>
     </form>
 </div>
             
@@ -444,9 +478,9 @@ var myCallBack = function() {
         });
     }
 
-    if( document.getElementById('gReCaptchaHorizontal') !=null ) {
+    if( document.getElementById('gReCaptchaBottom') !=null ) {
         //Render the recaptcha2 on the element with ID "recaptcha2"
-        recaptcha2 = grecaptcha.render('gReCaptchaHorizontal', {
+        recaptcha2 = grecaptcha.render('gReCaptchaBottom', {
           'sitekey' : '6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8', //Replace this with your Site key
           'theme' : 'light'
         });

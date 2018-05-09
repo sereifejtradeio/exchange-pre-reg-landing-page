@@ -26,33 +26,13 @@
       <meta name="revisit-after" content="30">
       <link rel="shortcut icon" type="image/x-icon" href="">
       <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/forms.css" media="screen">
-      <!--Font Awesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
       <!--AOS library-->
       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
       <!-- Jquery Framework -->
       <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
-      <!--Particles Entrty-->
-      <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
-      <!--Google reCaptcha-->
-      <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
-      <!-- charts -->
-      <script type="text/javascript" src="js/Chart.js"></script>
-      <!-- transform2d -->
-      <script type="text/javascript" src="js/plugins/jquery.transform2d.js"></script>
-      <!-- transform3d -->
-      <script type="text/javascript" src="js/plugins/jquery.transform3d.js"></script>
-      <!-- Jquery Easing -->
-      <script type="text/javascript" src="js/easing.js"></script>
-      <!-- trade.io Checkout-->
-      <script type="text/javascript" src="dashboard/js/functions.js"></script>
       <!-- Custom -->
       <script type="text/javascript" src="js/custom.js"></script>
-      <!-- Waypoints -->
-      <script type="text/javascript" src="js/waypoints.min.js"></script>
-      <!-- trade.io API-->
-      <script type="text/javascript" src="api2/api.js"></script>
       <!--AOS library-->
       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
    </head>
@@ -85,7 +65,6 @@
                </div>
             </div>
             <!-- header headline -->
-
          </div>
       </div>
    </body>

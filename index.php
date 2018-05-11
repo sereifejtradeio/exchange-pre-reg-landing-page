@@ -36,6 +36,16 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <!--AOS library-->
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"/>
         <!-- Jquery Framework -->
         <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
         <!--Particles Entrty-->

@@ -1285,7 +1285,7 @@ input:focus {
 }
 
 #introduction ul {
-    width: 1200px;
+    width: 775px;
     margin: 0px auto;
     list-style: none;
     padding: 102px 0 102px 0;
@@ -1295,9 +1295,10 @@ input:focus {
     float: left;
     width: 215px;
     background-repeat: no-repeat;
-    padding-left: 140px;
+/*    padding-left: 140px;*/
     min-height: 120px;
     padding-right: 65px;
+    z-index: 99;
 }
 
 #introduction li:last-child {
@@ -1323,10 +1324,11 @@ input:focus {
 
 #introduction a {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     text-decoration: none;
     color: #69c0af;
     font-size: 13px;
+    text-shadow: #69c0af 0px 0px 4px;
 }
 
 #introduction a:hover {
@@ -1521,7 +1523,7 @@ p.paragraph2 {
 #pes_middle {
     float: left;
     height: 100%;
-    width: 25.03%;
+    width: 25%;
     background-color: #50617d;
     text-align: center;
     display: table;
@@ -2039,7 +2041,7 @@ p.paragraph2 {
 div#footer {
     /* background: url(../img/stars.jpg); */
     background-size: cover;
-    z-index: 99999999;
+    z-index: 99999;
     background: #1c2748;
     position: relative;
 }
@@ -2111,7 +2113,21 @@ div#footer {
     color: #c1c1c1;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 13px;
-    line-height: 102px;
+/*    line-height: 102px;*/
+    padding-bottom: 20px;
+}
+
+#risk-disclaimer {
+
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: #c1c1c1;
+    font-size: 12px;
+    padding: 50px 100px 50px 100px;
+    line-height: 20px;
+}
+
+#risk-disclaimer strong {
+    font-weight: bold;
 }
 
 #copyright a {
@@ -2149,7 +2165,7 @@ div#footer {
         margin-left: -460px;
     }
     #introduction ul {
-        width: 919px;
+        width: 685px;
         margin: 0px auto;
         padding-left: 0px;
         padding-right: 0px;
@@ -2159,9 +2175,9 @@ div#footer {
     }
     #introduction li {
         float: left;
-        width: 18%;
+        width: 200px;
         background-repeat: no-repeat;
-        padding-left: 120px;
+/*        padding-left: 120px;*/
         min-height: 120px;
         padding-right: 30px;
     }

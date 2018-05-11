@@ -27,7 +27,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="trade.io's Beta Exchange Platform launched" />
         <meta property="og:description" content="The exciting BETA version of the exchange is now launched! Get ready for a smooth, customizable user interface that will complement the trading strategy and preferences of any given user." />
-        <meta property="og:image" content="img/exchange.trade.io-pre-registration.jpg" />
+        <meta property="og:image" content="https://exchange.trade.io/img/exchange.trade.io-pre-registration.jpg" />
         <meta name="revisit-after" content="30">
         <link rel="shortcut icon" type="image/x-icon" href="">
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">

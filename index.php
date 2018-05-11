@@ -21,8 +21,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>trade.io - Beta Exchange Platform - &amp; Pre-Registration</title>
         <meta name="robot" content="index,follow">
-        <meta name="copyright" content="Copyright © 2016 trade.io. All Rights Reserved.">
+        <meta name="copyright" content="Copyright © <?php echo date('Y');?> trade.io. All Rights Reserved.">
         <meta name="author" content="">
+        <meta property="og:url" content="https://exchange.trade.io" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="trade.io's Beta Exchange Platform launched" />
+        <meta property="og:description" content="The exciting BETA version of the exchange is now launched! Get ready for a smooth, customizable user interface that will complement the trading strategy and preferences of any given user." />
+        <meta property="og:image" content="img/exchange.trade.io-pre-registration.jpg" />
         <meta name="revisit-after" content="30">
         <link rel="shortcut icon" type="image/x-icon" href="">
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
@@ -400,11 +405,11 @@
                </a>
             </div>
              <div id="risk-disclaimer">
-                <strong>Risk Disclaimer:</strong> There are risks associated with utilizing an Internet-based trading system including, but not limited to, the failure of hardware, software, and Internet connections. You agree that we shall not be responsible for any communication failures, disruptions, errors, distortions, or delays you may experience when trading via the Services, however caused. Do not invest more capital than you can afford to lose.  Before undertaking any such transactions you should ensure that you fully understand the risks involved and seek independent advice if necessary. This information is not directed/intended for distribution to or use by residents of certain countries/jurisdictions on the OFAC sanctioned list including but not limited to Iran, North Korea, China, South Korea and USA. Terms and conditions apply.  
+                <strong>Risk Disclaimer</strong><br>There are risks associated with utilizing an Internet-based trading system including, but not limited to, the failure of hardware, software, and Internet connections. You agree that we shall not be responsible for any communication failures, disruptions, errors, distortions, or delays you may experience when trading via the Services, however caused. Do not invest more capital than you can afford to lose.  Before undertaking any such transactions you should ensure that you fully understand the risks involved and seek independent advice if necessary. This information is not directed/intended for distribution to or use by residents of certain countries/jurisdictions on the OFAC sanctioned list including but not limited to Iran, North Korea, China, South Korea and USA. Terms and conditions apply.  
             </div>
             <div id="copyright">
                 <div>
-                  © trade.io 2018 
+                  © trade.io <?php echo date('Y');?> 
                </div>
             </div>
          </div>

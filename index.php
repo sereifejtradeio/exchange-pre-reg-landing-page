@@ -161,8 +161,8 @@
             <div class="layer"></div>
             <div class="gradient-video"></div>
             <video playsinline="" autoplay="" muted="" loop="" poster="" id="bgvid">
-               <source src="https://cdn2.hubspot.net/hubfs/4371728/ExchangeContent/video/loop_2.webm" type="video/webm">
-               <source src="https://cdn2.hubspot.net/hubfs/4371728/ExchangeContent/video/loop_2.mp4" type="video/mp4">
+               <source src="video/loop_2.webm" type="video/webm">
+               <source src="video/loop_2.mp4" type="video/mp4">
             </video>
             <!-- template thumbnails wrapper
                <div id="template_thumb_wrapper">

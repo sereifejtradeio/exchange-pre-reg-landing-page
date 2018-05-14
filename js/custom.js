@@ -810,7 +810,14 @@ $(document).ready(function() {
                     $('#RegisterFormTop').each(function() {
                         this.reset();
                     });
-
+                    
+                    //Google Tag Manager Data Layer Push Event
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                       event: 'formSubmissionSuccess',
+                       formId: 'TopForm',
+                       formName: 'Exchange Pre-Registration'
+                    });
                     grecaptcha.reset(recaptcha1);
 
                 }
@@ -992,7 +999,14 @@ $(document).ready(function() {
                     $('#RegisterFormBottom').each(function() {
                         this.reset();
                     });
-
+                    
+                    //Google Tag Manager Data Layer Push Event
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                       event: 'formSubmissionSuccess',
+                       formId: 'BottomForm',
+                       formName: 'Exchange Pre-Registration'
+                    });
                     grecaptcha.reset(recaptcha2);
 
                 }

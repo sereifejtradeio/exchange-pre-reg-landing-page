@@ -70,125 +70,6 @@
         <script type="text/javascript" src="api2/api.js"></script>
         <!--AOS library-->
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        
-        
-        <script type="text/javascript" src="js/json2.js"></script>
-        <script type="text/javascript" src="js/l10n.js"></script>
-        <script type="text/javascript" src="js/localizations.js"></script>
-        
-        
-        
-        <script type="text/javascript">
-            
-            function getUrlParameter(name) {
-                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-                var results = regex.exec(location.search);
-                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-            };
-            
-            var localized;
-
-            $( document ).ready(function() {
-                
-                localize = function (string, fallback) {
-                localized = string.toLocaleString();
-                if (localized !== string) {
-                    return localized;
-                } else {
-                    return fallback;
-                }
-            };
-                var lang = getUrlParameter('lang');
-                String.locale = lang;
-                document.documentElement.lang = String.locale || document.documentElement.lang;
-                
-                //TO:DO
-                //Localize each text object - implement function to accumulate all potential localizable objects
-                //and collect them in an array
-                //furthermore go through each one of them and localize them based on the selected language
-                
-                //Example of .each loop
-                
-//              var obj = {
-//                  "flammable": "inflammable",
-//                  "duh": "no duh"
-//                };
-//                $.each( obj, function( key, value ) {
-//                  alert( key + ": " + value );
-//                });
-                
-                //TO:DO
-                //implement dropdown element with all available languages.
-                
-                //TO:DO
-                //
-                //Here's two examples of the processes that will be implemented in a stripped down form:
-                //
-                //Example #1
-                var info = document.getElementById("info").firstChild;
-                //console.log(info);
-                document.info = info.nodeValue = localize("%info", info.nodeValue);
-                //Example #2 - This will only work in Russian - "ru"
-                var info2 = document.getElementById("info2").firstChild;
-                document.info2 = info2.nodeValue = localize("%info2", info2.nodeValue);
-                //Don't forget to have fun cos this seems like a massive pain in the ass :)
-                
-                
-                
-                
-                var IDs = [];
-                $("div").each(function(i){
-                    var id = $(this).attr('id');
-                    if( id !== undefined ) {
-                        IDs.push(id);
-                    }
-                });
-                
-                
-                $.each( IDs, function( key, value ) {
-                  
-                    document.value = value.nodeValue = localize("%' + value + '", value.nodeValue);
-                    
-                    //alert( key + ": " + value );
-                });
-                console.log(IDs);
-                
-                
-                
-                
-                
-                
-                
-                
-            });
-            
-            
-            
-            
-            
-            
-            
-            
-//            if (location.hash) {
-//                String.locale = location.hash.substr(1);
-//                console.log(String.locale);   
-//            }
-//
-
-
-//            var info = document.getElementById("info").firstChild,
-//            title = document.getElementById("title").firstChild;
-//
-//            info.nodeValue = localize("%info", info.nodeValue);
-//            document.title = title.nodeValue = localize("%title", title.nodeValue);
-//            document.documentElement.dir = localize("%locale.dir", document.documentElement.dir);
-//
-//            document.documentElement.lang = String.locale || document.documentElement.lang;
-        </script>
-        
-        
-        
 
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -243,7 +124,7 @@
             <!-- header headline -->
             <div id="headline" data-aos="fade-down" data-aos-delay="300">
                <!-- big headline -->
-               <span class="font-bold" id="info">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light" id="info2">IS NOW OPEN FOR PRE REGISTRATION</span>
+               <span class="font-bold">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light">IS NOW OPEN FOR PRE REGISTRATION</span>
                <!--[if lte IE 8]>
                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                <![endif]-->

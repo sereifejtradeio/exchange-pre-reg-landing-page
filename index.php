@@ -52,6 +52,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="">
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/forms.css" media="screen">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css"/>
         <!--Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <!--AOS library-->
@@ -140,6 +141,12 @@
                      <h3><i class="fab fa-telegram"></i></h3>
                   </a>
                </div>
+                <div id="site-menu">
+                    <?php include('includes/language.php') ?>
+                    <ul class="mob-menu">
+                        <?php include('includes/menu.php') ?>
+                    </ul>
+                </div>
             </div>
             <!-- header headline -->
             <div id="headline" data-aos="fade-down" data-aos-delay="300">
@@ -481,6 +488,15 @@
                 t.parentElement.insertBefore(s, t.nextSibling);
             })(document, 'https://tio.ladesk.com/scripts/track.js', function (e) {
                 chatButton = LiveAgent.createButton('7cca1741', e);
+            });
+            
+            $(".languagepicker").css("height", 0);
+            // Language Menu
+            $('.languagepicker').hover(function (e) {
+                var height = $(".languagepicker")[0].scrollHeight;
+                $(".languagepicker").css("height", height + "px");
+            }, function () {
+                $(".languagepicker").css("height", 0);
             });
       </script>
    </body>

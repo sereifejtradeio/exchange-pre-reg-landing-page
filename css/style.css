@@ -68,6 +68,7 @@ div#videobox {
 .container .socialbar {
     margin-top: 40px;
     text-align:right;
+    margin-right: 130px;
 }
 
 #introduction h1
@@ -109,7 +110,7 @@ div#videobox {
 .socialbar
 {
     margin:auto;
-    width:100%;
+/*    width:100%;*/
     display:block;
     text-align:center;
 }
@@ -976,7 +977,7 @@ video {
     left: 50%;
     margin-left: -600px;
     height: 100px;
-    z-index: 999;
+    z-index: 9999999;
 }
 
 #headline h4 {
@@ -2467,7 +2468,7 @@ div#footer {
         left: 0;
         margin-left: 0px;
         height: 100px;
-        z-index: 999;
+        z-index: 9999999;
     }
     #logo {
         text-align: center;
@@ -2851,7 +2852,7 @@ div#footer {
 }
     #logo
     {
-        top:50px;
+        top:100px;
     }
 
 }
@@ -2875,8 +2876,12 @@ div#footer {
         margin-top:15px;
        
 }
-    #logo
-    {
-        top:50px;
+    
+    #logo {
+        top: 100px;
+    }
+    
+    #site-menu {
+        text-align: center;    
     }
 }

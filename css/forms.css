@@ -72,6 +72,10 @@ form.RegisterForm {
     margin-right: 5px;
 }
 
+.ar #site-menu {
+    margin-left: 100px;
+}
+
 .roundborders {
     border-radius: 3px;
 }

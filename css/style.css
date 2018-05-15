@@ -1305,6 +1305,7 @@ input:focus {
     min-height: 120px;
     padding-right: 65px;
     z-index: 99;
+    position: relative;
 }
 
 #introduction li:last-child {

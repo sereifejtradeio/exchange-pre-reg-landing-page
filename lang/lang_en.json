@@ -1,0 +1,70 @@
+{
+"section1": {
+    "line1": "THE FUTURE OF CRYPTO TRADING",
+    "line2": "IS NOW OPEN FOR PRE REGISTRATION",
+    "username_placeholder": "Username",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "confirm_password_placeholder": "Re-type Password",
+    "pre_register_btn": "PRE-REGISTER",
+    "json_register_success": "Thank you for registering!"
+},
+"section2": {
+    "line1": "Be the first to sign up to",
+    "point1": "Easy Account Verification",
+    "point1_text": "Efficient onboarding of all new clients. Less groan, more yay!",
+    "point2": "24/7 Responsive Support",
+    "point2_text": "Our support specialists are on call 24/7 by <a href='mailto:support@trade.io'>email</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, or telephone so you can get answers in minutes to any issues you might face.",
+    "point3": "Low Deposit Fees",
+    "point3_text": "trade.io charges the lowest withdrawal fees in the market, nothing on deposits, and a flat 0.1% commission on each trade, so you can keep more of your money."
+  },
+"section3": {
+    "line1": "Why you will love our exchange",
+    "point1": "Clean and crisp layout",
+    "point2": "Customizable/Movable widgets",
+    "point3": "Create and save up to 10 preset layouts (multi-screen compatible)",
+    "point4": "Customizable profile, newsfeed, chat, and more."
+  },
+"section4": {
+    "point1": "The industry's only fully customizable platform",
+    "point1_text": "With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.",
+    "point2": "Technical indicators to help with your trading",
+    "point2_text": "Our default charting widgets and other technical tools will allow you to review historical data that will help you to tailor your future trading strategy.",
+    "point3": "Regular competitions and airdrops",
+    "point3_text": "Be eligible to benefit from generous airdops & promotions to win real prizes, luxury VIP holidays as well as up to $100,000 spending money",
+    "point4": "Worldwide servers for fast trading, no latency",
+    "point4_text": "We understand that you need to trade with great power and great speed. We utilise servers worldwide to keep latency to a minimum, wherever you choose to trade from."
+  },
+"section5": {
+    "title1": "WALKTRHOUGH OF OUR BETA EXCHANGE PLATFORM"
+  },
+"section6": {
+    "title1": "Free Crypto Education",
+    "title2": "EXCHANGE CRYPTO TRADING TRAINING SERIES",
+    "video1_title" : "Researching The Coins",
+    "video2_title" : "Leaving The Trade",
+    "video3_title" : "Trading Different Cryptocurrency Types"
+  },
+"section7": {
+    "title1": "The trading revolution has begun!",
+    "title2": "Pre-Register Now",
+    "username_placeholder": "Username",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "confirm_password_placeholder": "Re-type Password",
+    "pre_register_btn": "PRE-REGISTER",
+    "json_register_success": "Thank you for registering!"
+  },
+"section8": {
+    "risk_disclaimer_title": "Risk Disclaimer",
+    "risk_disclaimer_text": "There are risks associated with utilizing an Internet-based trading system including, but not limited to, the failure of hardware, software, and Internet connections. You agree that we shall not be responsible for any communication failures, disruptions, errors, distortions, or delays you may experience when trading via the Services, however caused. Do not invest more capital than you can afford to lose. Before undertaking any such transactions you should ensure that you fully understand the risks involved and seek independent advice if necessary. This information is not directed/intended for distribution to or use by residents of certain countries/jurisdictions on the OFAC sanctioned list including but not limited to Iran, North Korea, China, South Korea and USA. Terms and conditions apply."
+  },
+"error_msgs": {
+    "username": "*Username cannot be empty!",
+    "email": "*Email is invalid!",
+    "password": "*Password must have 8 chars, one lowercase, one uppercase, one number, and one special character!",
+    "confirm_password": "*Repeat Password must have 8 chars, one lowercase, one uppercase, one number, and one special character!",
+    "passwords_do_not_match": "*Password and Repeat password do not match!",
+    "captcha": "*Captcha is invalid!"
+  }
+}

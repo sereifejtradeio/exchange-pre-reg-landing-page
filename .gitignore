@@ -1,2 +1,5 @@
 /vendor/
 .DS_Store
+langcache/*
+!langcache/README.md
+/vendor

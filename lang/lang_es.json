@@ -1,0 +1,70 @@
+{
+"section1": {
+    "line1": "EL FUTURO DEL TRADING DE CRIPTODIVISAS",
+    "line2": "ABIERTO YA PARA REGISTRO",
+    "username_placeholder": "Nombre de usuario",
+    "email_placeholder": "Correo electrónico",
+    "password_placeholder": "Contraseña",
+    "confirm_password_placeholder": "Repetir contraseña",
+    "pre_register_btn": "PRE REGISTRO",
+    "json_register_success": "¡Gracias por registrarse!"
+  },
+"section2": {
+    "line1": "Sea el primero en registrarse",
+    "point1": "Fácil verificación de cuenta",
+    "point1_text": "Fácil integración de nuevos clientes. ¡Menos problemas, más soluciones!",
+    "point2": "Atención al cliente multicanal e inmediata, 24/7",
+    "point2_text": "Nuestros especialistas en atención al cliente están de guardia las 24 horas del día, 7 días a la semana por <a href='mailto:support@trade.io'>email</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>chat</a>, o teléfono para que pueda tener la respuesta que necesita ante cualquier problema en cuestión de minutos.",
+    "point3": "Mínimas tarifas por depósito",
+    "point3_text": "En trade.io cargamos las tarifas por retirada más bajas del mercado, cero por depósito y una tarifa plana del 0,1% por cada operación para que usted pueda más de su dinero."
+  },
+"section3": {
+    "line1": "Por qué le encantará nuestro exchange",
+    "point1": "Diseño sencillo y limpio",
+    "point2": "Widgets personalizables y móviles",
+    "point3": "Cree y guarde hasta 10 diseños predeterminados (compatibles con múltiples pantallas)",
+    "point4": "Perfil personalizable, canal de noticias, chat y mucho más."
+ },
+"section4": {
+    "point1": "La única plataforma de la industria totalmente personalizable",
+    "point1_text": "Con nuestra potente flexibilidad, podrá diseñarse un entorno de trading perfecto solo para usted en solo unos minutos después del registro, sin ningún compromiso sobre velocidad o rendimiento.",
+    "point2": "Indicadores técnicos para ayudarle a operar.",
+    "point2_text": "Nuestros widgets de gráficos predeterminados y otras herramientas técnicas le ayudarán a revisar datos históricos que le ayudarán a diseñar su futura estrategia de trading a su medida.",
+    "point3": "Concursos y airdrops regulares",
+    "point3_text": "Participe y aproveche nuestros generosos airdrops y promociones para ganar premios reales, vacaciones VIP de lujo y hasta 100.000$ en dinero para gastar.",
+    "point4": "Servidores en todo el planeta para un trading más rápido, sin latencia",
+    "point4_text": "Sabemos que necesita operar con la mayor potencia y a una gran velocidad. En trade.io empleamos servidores de todo el mundo para mantener la latencia al mínimo, sea lo que sea lo que quiera operar."
+  },
+"section5": {
+    "title1": "RECORRIDO POR NUESTRA PLATAFORMA DE EXCHANGE BETA"
+  },
+"section6": {
+    "title1": "Formación gratis en criptomonedas",
+    "title2": "VÍDEOS DE FORMACIÓN DE TRADING DE CRIPTOMONEDAS EN NUESTRO EXCHANGE",
+    "video1_title" : "Investigar las monedas",
+    "video2_title" : "Dejar la operación",
+    "video3_title" : "Operar distintas criptomonedas"
+  },
+"section7": {
+    "title1": "¡La revolución del trading ya está aquí!",
+    "title2": "Pre regístrese ya",
+    "username_placeholder": "Nombre de usuario",
+    "email_placeholder": "Correo electrónico",
+    "password_placeholder": "Contraseña",
+    "confirm_password_placeholder": "Repetir contraseña",
+    "pre_register_btn": "PRE REGISTRO",
+    "json_register_success": "¡Gracias por registrarse!"
+ },
+"section8": {
+    "risk_disclaimer_title": "Aviso de riesgo",
+    "risk_disclaimer_text": "Existen diversos riesgos asociados al uso de un sistema de trading por internet, entre ellos posibles fallos de hardware, software o conexión a internet. Usted acuerda que no seremos responsables de fallos de comunicación, interrupciones, errores, distorsiones o retrasos que usted pueda experimentar cuando utilice nuestros servicios, sea cual sea la causa. Nunca invierta más capital del que pueda permitirse perder. Antes de emprender una operación de esta clase, debe asegurarse de entender a la perfección los riesgos en los que incurre y, si es necesario, buscar asesoramiento independiente. Esta información no está dirigida a ni concebida para ser distribuida o utilizada por residentes de ciertos países o jurisdicciones de la llamada 'lista negra' o 'lista OFAC' (siglas en inglés de Oficina para el Control de Activos Extranjeros), que incluye, entre otros países, Corea del Norte, China, Corea del Sur y EEUU. Sujeto a términos y condiciones."
+  },
+"error_msgs": {
+    "username": "*El campo 'Nombre de usuario' es obligatorio",
+    "email": "*Correo electrónico inválido",
+    "password": "*El campo 'Contraseña' debe tener 8 caracteres, uno en mayúscula, uno en minúscula, un número y un carácter especial.",
+    "confirm_password": "*El campo 'Repetir contraseña' debe tener 8 caracteres, uno en mayúscula, uno en minúscula, un número y un carácter especial.",
+    "passwords_do_not_match": "*Los campos 'Contraseña' y 'Repetir contraseña' no coinciden",
+    "captcha": "*Captcha inválido"
+  }
+}

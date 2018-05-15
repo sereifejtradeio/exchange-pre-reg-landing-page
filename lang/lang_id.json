@@ -1,0 +1,70 @@
+{
+"section1": {
+    "line1": "PRA-REGISTRASI TELAH DIBUKA MENUJU",
+    "line2": "MASA DEPAN TRADING KRIPTO",
+    "username_placeholder": "Nama Pengguna",
+    "email_placeholder": "Email",
+    "password_placeholder": "Kata sandi",
+    "confirm_password_placeholder": "Ulangi Kata Sandi",
+    "pre_register_btn": "PRA-REGISTRASI",
+    "json_register_success": "Terima kasih atas registrasi Anda!"
+},
+"section2": {
+    "line1": "Jadilah pendaftar pertama",
+    "point1": "Verifikasi Akun Mudah",
+    "point1_text": "Proses penerimaan klien baru efisien. Tidak sulit, sangat mudah!",
+    "point2": "Dukungan Tanggap 24/7",
+    "point2_text": "Tim dukungan kami tersedia 24/7 via <a href='mailto:support@trade.io'>email</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, atau telepon sehingga Anda dapat langsung mendapat jawaban jika mengalami masalah.",
+    "point3": "Biaya Deposit Murah",
+    "point3_text": "trade.io memberlakukan biaya penarikan dana paling murah di industri, bebas biaya deposit, dan komisi flat 0.1% untuk setiap trade. Lebih hemat!"
+  },
+"section3": {
+    "line1": "Mengapa Anda pasti suka exchange kami",
+    "point1": "Layout bersih, ringkas, dan simpel",
+    "point2": "Widget kustom/dapat digeser",
+    "point3": "Buat dan simpan hingga 10 template layout (kompatibel untuk multi-layar)",
+    "point4": "Profil, newsfeed kustom, chat, dan banyak lagi."
+},
+"section4": {
+    "point1": "Satu-satunya platform di industri yang sepenuhnya dapat disesuaikan",
+    "point1_text": "Dengan fleksibilitas yang hebat, Anda bisa membangun lingkungan trading yang paling cocok untuk Anda hanya dalam beberapa menit setelah mendaftar, tanpa mengorbankan performa maupun kecepatan.",
+    "point2": "Indikator teknikal untuk membantu trading Anda",
+    "point2_text": "Widget grafik default dan perangkat teknikal lainnya yang kami sediakan dapat Anda gunakan untuk meninjau data historis untuk mengatur strategi trading Anda.",
+    "point3": "Kompetisi dan promosi rutin",
+    "point3_text": "Raih kelayakan untuk mendapat hadiah dan promo menarik dan menangkan berbagai hadiah, liburan mewah VIP serta uang saku hingga $100.000",
+    "point4": "Server di seluruh dunia untuk trading yang cepat, tanpa latensi",
+    "point4_text": "Kami paham Anda perlu proses trading yang berdaya besar dan berkecepatan tinggi. Kami menggunakan server di seluruh dunia untuk menekan latensi, di mana pun Anda berada."
+  },
+"section5": {
+    "title1": "TUR PLATFORM EXCHANGE BETA KAMI"
+  },
+"section6": {
+    "title1": "Edukasi Kripto Gratis",
+    "title2": "SERI PELATIHAN TRADING KRIPTO DI EXCHANGE",
+    "video1_title" : "Riset Tentang Koin",
+    "video2_title" : "Keluar Dari Trade",
+    "video3_title" : "Trading Berbagai Jenis Uang Kripto"
+  },
+"section7": {
+    "title1": "Revolusi trading telah dimulai!",
+    "title2": "Lakukan Pra-Registrasi Sekarang",
+    "username_placeholder": "Nama Pengguna",
+    "email_placeholder": "Email",
+    "password_placeholder": "Kata sandi",
+    "confirm_password_placeholder": "Ulangi Kata Sandi",
+    "pre_register_btn": "PRA-REGISTRASI",
+    "json_register_success": "Terima kasih atas registrasi Anda!"
+},
+"section8": {
+    "risk_disclaimer_title": "Disklaimer Risiko",
+    "risk_disclaimer_text": "Penggunaan sistem trading berbasis internet membawa berbagai risiko, termasuk namun tidak terbatas pada masalah atau kegagalan hardware, software, serta koneksi internet. Anda setuju bahwa kami tidak bertanggung jawab atas segala kegagalan komunikasi, gangguan, masalah, distorsi, maupun keterlambatan yang mungkin Anda alami saat trading melalui Layanan, apa pun penyebabnya. Pastikan Anda siap menanggung kerugian dari setiap dana yang Anda investasikan. Sebelum melakukan transaksi seperti itu, Anda harus memastikan bahwa Anda telah memahami sepenuhnya segala risiko yang ada. Cari saran independen apabila dibutuhkan. 'Informasi ini tidak ditujukan/dimaksudkan untuk dibagikan kepada atau digunakan oleh penduduk negara/yurisdiksi tertentu di daftar sanksi OFAC, termasuk namun tidak terbatas pada Iran, Korea Utara, China, Korea Selatan, dan Amerika Serikat. Syarat dan ketentuan berlaku."
+ },
+"error_msgs": {
+    "username": "*Nama Pengguna tidak boleh kosong!",
+    "email": "*Email tidak valid!",
+    "password": "*Kata Sandi harus terdiri dari setidaknya 8 karakter, satu huruf besar, satu huruf kecil, satu angka, dan satu karakter khusus!",
+    "confirm_password": "*Ulangi Kata Sandi harus terdiri dari setidaknya 8 karakter, satu huruf besar, satu huruf kecil, satu angka, dan satu karakter khusus!",
+    "passwords_do_not_match": "*Kata Sandi dan Ulangi Kata Sandi tidak sama!",
+    "captcha": "*Captcha tidak valid!"
+  }
+}

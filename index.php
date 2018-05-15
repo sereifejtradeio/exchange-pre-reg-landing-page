@@ -13,9 +13,29 @@
    check_start_session();
    set_csrf_token();
    
+    // include i18n class and initialize it
+    require_once 'i18n.class.php';
+    $i18n = new i18n('lang/lang_{LANGUAGE}.json', 'langcache/', 'en');
+    // Parameters: language file path, cache dir, default language (all optional)
+
+    // init object: load language files, parse them if not cached, and so on.
+    $i18n->init();
+    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
+    
+    switch($lang) {
+        case 'cn': 
+            $captcha_language = "zh-CN";
+            break;
+        case 'jp': 
+            $captcha_language = "ja";
+            break;
+        default:
+            $captcha_language = $lang;
+    }
+
    ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $lang == 'ar' ? 'rtl' : 'ltr' ?>">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -51,7 +71,7 @@
         <!--Particles Entrty-->
         <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
         <!--Google reCaptcha-->
-        <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=<?php echo $captcha_language; ?>" async defer></script>
         <!-- charts -->
         <script type="text/javascript" src="js/Chart.js"></script>
         <!-- transform2d -->
@@ -70,7 +90,7 @@
         <script type="text/javascript" src="api2/api.js"></script>
         <!--AOS library-->
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
+        
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -79,7 +99,7 @@
         })(window,document,'script','dataLayer','GTM-WLHR9B4');</script>
         <!-- End Google Tag Manager -->
     </head>
-   <body cz-shortcut-listen="true">
+   <body cz-shortcut-listen="true" class="<?php echo $lang; ?>">
        <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLHR9B4"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -124,7 +144,7 @@
             <!-- header headline -->
             <div id="headline" data-aos="fade-down" data-aos-delay="300">
                <!-- big headline -->
-               <span class="font-bold">THE FUTURE OF CRYPTO TRADING</span><br><span class="font-light">IS NOW OPEN FOR PRE REGISTRATION</span>
+               <span class="font-bold"><?php echo L::section1_line1; ?></span><br><span class="font-light"><?php echo L::section1_line2; ?></span>
                <!--[if lte IE 8]>
                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                <![endif]-->
@@ -141,32 +161,32 @@
                   <!--	<h1>Pre-register Now</h1>-->
                   <form method="post" class="RegisterForm" id="RegisterFormTop" action="">
                      <div id="json-register-error"></div>
-                     <div id="json-register-success">Thank you for registering!</div>
+                     <div id="json-register-success"><?php echo L::section1_json_register_success; ?></div>
                      <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source" value="Exchange-Pre-Registration">
                      <div class="field-left top-username">
-                        <input type="text" name="top_form_username" id="top_form_username" placeholder="Username" required="required" />
-                        <div class="top_form_username_error"></div>
+                        <input type="text" name="top_form_username" id="top_form_username" placeholder="<?php echo L::section1_username_placeholder; ?>" required="required" />
+                        <div class="top_form_username_error"><?php echo L::error_msgs_username; ?></div>
                      </div>
                      <div class="field-right top-email">
-                        <input type="email" name="top_form_email" id="top_form_email" placeholder="Email" required="required" />
-                        <div class="top_form_email_error"></div>
+                        <input type="email" name="top_form_email" id="top_form_email" placeholder="<?php echo L::section1_email_placeholder; ?>" required="required" />
+                        <div class="top_form_email_error"><?php echo L::error_msgs_email; ?></div>
                      </div>
                      <div class="field-left top-password">
-                        <input type="password" name="top_form_password" id="top_form_password" placeholder="Password" required="required" />
-                        <div class="top_form_password_error"></div>
+                        <input type="password" name="top_form_password" id="top_form_password" placeholder="<?php echo L::section1_password_placeholder; ?>" required="required" />
+                        <div class="top_form_password_error"><?php echo L::error_msgs_password; ?></div>
                      </div>
                      <div class="field-right top-confirm-password">
-                        <input type="password" name="top_form_confirm_password" id="top_form_confirm_password" placeholder="Retype Password" required="required" />
-                        <div class="top_form_confirm_password_error"></div>
-                        <div class="top_form_passwords_do_not_match_error"></div>
+                        <input type="password" name="top_form_confirm_password" id="top_form_confirm_password" placeholder="<?php echo L::section1_confirm_password_placeholder; ?>" required="required" />
+                        <div class="top_form_confirm_password_error"><?php echo L::error_msgs_confirm_password; ?></div>
+                        <div class="top_form_passwords_do_not_match_error"><?php echo L::error_msgs_passwords_do_not_match; ?></div>
                      </div>
                      <div class="top-captcha">
                         <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptcha"></div>
-                        <div class="top_form_captcha_error"></div>
+                        <div class="top_form_captcha_error"><?php echo L::error_msgs_captcha; ?></div>
                      </div>
                      <div class="clearfix">
-                        <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+                        <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large"><?php echo L::section1_pre_register_btn; ?></button>
                      </div>
                   </form>
                </div>
@@ -207,23 +227,23 @@
          <!-- introduction - 3 features -->
          <div id="introduction">
             <div id="particle-canvas">
-               <h1>Be the first to sign up to</h1>
+               <h1><?php echo L::section2_line1; ?></h1>
                <!-- the container that hold the features -->
                <ul class="clear-fix">
                   <li class="states state_1" data-aos="fade-down">
                      <h4><i class="fas fa-user-circle"></i></h4>
-                     <h3>Easy Account Verification</h3>
-                     <p>Efficient onboarding of all new clients. Less groan, more yay!<br><br></p>
+                     <h3><?php echo L::section2_point1; ?></h3>
+                     <p><?php echo L::section2_point1_text; ?><br><br></p>
                   </li>
                   <li class="states state_2" data-aos="fade-down" data-aos-delay="300">
                      <h4><i class="fas fa-phone-square"></i></h4>
-                     <h3>24/7 Responsive Support</h3>
-                     <p>Our support specialists are on call 24/7 by <a href="mailto: support@trade.io">email</a>, <a href="javascript:void(0)" onClick="chatButton.onClick();">live chat</a>, or telephone so you can get answers in minutes to any issues you might face.<br></p>
+                     <h3><?php echo L::section2_point2; ?></h3>
+                     <p><?php echo L::section2_point2_text; ?><br></p>
                   </li>
                   <li class="states state_4" data-aos="fade-down" data-aos-delay="600">
                      <h4><i class="fas fa-exclamation-circle"></i></h4>
-                     <h3>Low Deposit Fees</h3>
-                     <p>trade.io charges the lowest withdrawal fees in the market, nothing on deposits, and a flat 0.1% commission on each trade, so you can keep more of your money.</p>
+                     <h3><?php echo L::section2_point3; ?></h3>
+                     <p><?php echo L::section2_point3_text; ?></p>
                   </li>
                </ul>
             </div>
@@ -233,15 +253,12 @@
             <div id="dashboard_left" data-aos="fade-up"></div>
             <div id="dashboard_right" data-aos="fade-down">
                <div class="textwrap" id="DashLight" >
-                  <h2><span></span>Why you will<br>
-                     love our exchange
-                  </h2>
+                  <h2><span></span><?php echo L::section3_line1; ?></h2>
                   <ul class="exchange clear-fix" >
-                     <li  data-aos-delay="0">Clean and crisp layout</li>
-                     <li data-aos-delay="100">Customizable/Movable widgets</li>
-                     <li  data-aos-delay="200">Create and save up to 10 preset layouts (multi-screen compatible)</li>
-                     <li  data-aos-delay="300">Customizable profile, newsfeed, chat, and more. 
-                     </li>
+                     <li  data-aos-delay="0"><?php echo L::section3_point1; ?></li>
+                     <li data-aos-delay="100"><?php echo L::section3_point2; ?></li>
+                     <li  data-aos-delay="200"><?php echo L::section3_point3; ?></li>
+                     <li  data-aos-delay="300"><?php echo L::section3_point4; ?></li>
                   </ul>
                   <br>
                   <!--				<a href="#" class="open_register font-semibold" style="text-transform: uppercase;">Register an account</a>-->
@@ -253,28 +270,27 @@
                <div class="textwrap pick">
                   <!-- <img src="img/shopping_bag_icon.png"> -->
                   <h2><i class="fas fa-cogs"></i></h2>
-                  <p>The industry's only fully customizable platform</p>
+                  <p><?php echo L::section4_point1; ?></p>
                   <br>
-                  <p class="paragraph2">With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.</p>
+                  <p class="paragraph2"><?php echo L::section4_point1_text; ?></p>
                </div>
             </div>
             <div id="pes_middle" data-aos="fade-down" data-aos-delay="300">
                <div class="textwrap edit">
                   <!-- <img src="img/settings_icon.png"> -->
                   <h2><i class="fas fa-chart-area"></i></h2>
-                  <p>Technical indicators to help with your trading</p>
+                  <p><?php echo L::section4_point2; ?></p>
                   <br>
-                  <p class="paragraph2">Our default charting widgets and other technical tools will allow you to review historical data that will help you to tailor your future trading strategy.  
-                  </p>
+                  <p class="paragraph2"><?php echo L::section4_point2_text; ?></p>
                </div>
             </div>
             <div id="pes_right" data-aos="fade-down" data-aos-delay="600">
                <div class="textwrap send">
                   <!-- <img src="img/send_icon.png"> -->
                   <h2><i class="fas fa-plane"></i></h2>
-                  <p>Regular competitions and airdrops</p>
+                  <p><?php echo L::section4_point3; ?></p>
                   <br>
-                  <p class="paragraph2">Be eligible to benefit from generous airdops & promotions to win real prizes, luxury VIP holidays as well as up to $100,000 spending money</p>
+                  <p class="paragraph2"><?php echo L::section4_point3_text; ?></p>
                   <div class="start_donut"></div>
                </div>
             </div>
@@ -282,16 +298,16 @@
                <div class="textwrap send2">
                   <!-- <img src="img/send_icon.png"> -->
                   <h2><i class="fas fa-server"></i></h2>
-                  <p>Worldwide servers for fast trading, no latency</p>
+                  <p><?php echo L::section4_point4; ?></p>
                   <br>
-                  <p class="paragraph2">We understand that you need to trade with great power and great speed. We utilise servers worldwide to keep latency to a minimum, wherever you choose to trade from.</p>
+                  <p class="paragraph2"><?php echo L::section4_point4_text; ?></p>
                </div>
             </div>
          </div>
          <div id="Walkthrough" data-aos="fade-up" data-aos-delay="1300">
             <br>
             <br>
-            <h3>WALKTRHOUGH OF OUR BETA EXCHANGE PLATFORM</h3>
+            <h3><?php echo L::section5_title1; ?></h3>
             <br>
             <br>
             <div id="videobox">
@@ -310,27 +326,27 @@
          <div id="Education" data-aos="fade-down">
             <br>
             <br>
-            <h1>Free Crypto Education</h1>
-            <h3>EXCHANGE CRYPTO TRADING TRAINING SERIES</h3>
+            <h1><?php echo L::section6_title1; ?></h1>
+            <h3><?php echo L::section6_title2; ?></h3>
             <br>
             <br>
             <div id="videobox">
                <div class="videoitem" data-aos="fade-down">
-                  <h2>Researching The Coins</h2>
+                  <h2><?php echo L::section6_video1_title; ?></h2>
                   <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
                      <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/7fe7gaerg5?seo=false&videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div>
                   </div>
                   <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
                </div>
                <div class="videoitem" data-aos="fade-down" data-aos-delay="300">
-                  <h2>Leaving The Trade</h2>
+                  <h2><?php echo L::section6_video2_title; ?></h2>
                   <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
                      <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/lxoo8o7bvx?seo=false&videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div>
                   </div>
                   <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
                </div>
                <div class="videoitem" data-aos="fade-down" data-aos-delay="600">
-                  <h2>Trading Different Cryptocurrency Types</h2>
+                  <h2><?php echo L::section6_video3_title; ?></h2>
                   <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
                      <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/tqowq3rgzy?seo=false&videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div>
                   </div>
@@ -344,9 +360,9 @@
          <div id="footer" >
             <div id="register_footer">
                <div class="slogan" style="display: table;">
-                  <h2>The trading revolution has begun!</h2>
+                  <h2><?php echo L::section7_title1; ?></h2>
                </div>
-               <h2 id="registerText">Pre-Register Now</h2>
+               <h2 id="registerText"><?php echo L::section7_title2; ?></h2>
                <div id="register-logo">
                   <div class="logo-btm"><a href="#"><img src="../img/footer-logo.png"></a></div>
                   <!-- <div class="register-btm"><a href="#" class="">Register a Free account</a></div> -->
@@ -367,32 +383,32 @@
                   <!--	<h1>Pre-register Now</h1>-->
                   <form method="post" class="RegisterForm" id="RegisterFormBottom" action="">
                      <div id="json-register-error-bottom"></div>
-                     <div id="json-register-success-bottom">Thank you for registering!</div>
+                     <div id="json-register-success-bottom"><?php echo L::section7_json_register_success; ?></div>
                      <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
                      <div class="field-left top-username">
-                        <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="Username" />
-                        <div class="bottom_form_username_error"></div>
+                        <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="<?php echo L::section7_username_placeholder; ?>" />
+                        <div class="bottom_form_username_error"><?php echo L::error_msgs_username; ?></div>
                      </div>
                      <div class="field-right top-email">
-                        <input type="email" name="bottom_form_email" id="bottom_form_email" placeholder="Email" />
-                        <div class="bottom_form_email_error"></div>
+                        <input type="email" name="bottom_form_email" id="bottom_form_email" placeholder="<?php echo L::section7_email_placeholder; ?>" />
+                        <div class="bottom_form_email_error"><?php echo L::error_msgs_email; ?></div>
                      </div>
                      <div class="field-left top-password">
-                        <input type="password" name="bottom_form_password" id="bottom_form_password" placeholder="Password" />
-                        <div class="bottom_form_password_error"></div>
+                        <input type="password" name="bottom_form_password" id="bottom_form_password" placeholder="<?php echo L::section7_password_placeholder; ?>" />
+                        <div class="bottom_form_password_error"><?php echo L::error_msgs_password; ?></div>
                      </div>
                      <div class="field-right top-confirm-password">
-                        <input type="password" name="bottom_form_confirm_password" id="bottom_form_confirm_password" placeholder="Retype Password" />
-                        <div class="bottom_form_confirm_password_error"></div>
-                        <div class="bottom_form_passwords_do_not_match_error"></div>
+                        <input type="password" name="bottom_form_confirm_password" id="bottom_form_confirm_password" placeholder="<?php echo L::section7_confirm_password_placeholder; ?>" />
+                        <div class="bottom_form_confirm_password_error"><?php echo L::error_msgs_confirm_password; ?></div>
+                        <div class="bottom_form_passwords_do_not_match_error"><?php echo L::error_msgs_passwords_do_not_match; ?></div>
                      </div>
                      <div class="top-captcha">
                         <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptchaBottom"></div>
-                        <div class="bottom_form_captcha_error"></div>
+                        <div class="bottom_form_captcha_error"><?php echo L::error_msgs_captcha; ?></div>
                      </div>
                      <div class="clearfix">
-                        <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large">PRE-REGISTER</button>
+                        <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large"><?php echo L::section7_pre_register_btn; ?></button>
                      </div>
                   </form>
                </div>
@@ -415,7 +431,7 @@
                </a>
             </div>
              <div id="risk-disclaimer">
-                <strong>Risk Disclaimer</strong><br>There are risks associated with utilizing an Internet-based trading system including, but not limited to, the failure of hardware, software, and Internet connections. You agree that we shall not be responsible for any communication failures, disruptions, errors, distortions, or delays you may experience when trading via the Services, however caused. Do not invest more capital than you can afford to lose.  Before undertaking any such transactions you should ensure that you fully understand the risks involved and seek independent advice if necessary. This information is not directed/intended for distribution to or use by residents of certain countries/jurisdictions on the OFAC sanctioned list including but not limited to Iran, North Korea, China, South Korea and USA. Terms and conditions apply.  
+                <strong><?php echo L::section8_risk_disclaimer_title; ?></strong><br><?php echo L::section8_risk_disclaimer_text; ?> 
             </div>
             <div id="copyright">
                 <div>

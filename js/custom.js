@@ -653,12 +653,12 @@ $(document).ready(function() {
             $('#top_form_username').css({
                 "border-color": "#d76468"
             });
-            $('.top_form_useraname_error').show();
+            $('.top_form_username_error').show();
         } else {
             $('#top_form_username').css({
                 "border": "1px solid rgba(0, 0, 0, 0.3)"
             });
-            $('.top_form_useraname_error').hide();
+            $('.top_form_username_error').hide();
         }
 
         if (email == '') {
@@ -771,9 +771,9 @@ $(document).ready(function() {
 
                         $.each(obj.error, function(i, item) {
 
-                            $(".top_form_" + item.element + "_error").html('');
+                            //$(".top_form_" + item.element + "_error").html('');
 
-                            $(".top_form_" + item.element + "_error").append('*' + item.message + '<br/>');
+                            //$(".top_form_" + item.element + "_error").append('*' + item.message + '<br/>');
 
                             $(".top_form_" + item.element + "_error").show();
 
@@ -781,7 +781,7 @@ $(document).ready(function() {
 
                     } else {
 
-                        $(".top_form_useraname_error").hide();
+                        $(".top_form_username_error").hide();
                         $(".top_form_email_error").hide();
                         $(".top_form_password_error").hide();
                         $(".top_form_confirm_password_error").hide();
@@ -799,7 +799,7 @@ $(document).ready(function() {
 
                 } else {
 
-                    $(".top_form_useraname_error").hide();
+                    $(".top_form_username_error").hide();
                     $(".top_form_email_error").hide();
                     $(".top_form_password_error").hide();
                     $(".top_form_confirm_password_error").hide();
@@ -842,12 +842,12 @@ $(document).ready(function() {
             $('#bottom_form_username').css({
                 "border-color": "#d76468"
             });
-            $('.bottom_form_useraname_error').show();
+            $('.bottom_form_username_error').show();
         } else {
             $('#bottom_form_username').css({
                 "border": "1px solid rgba(0, 0, 0, 0.3)"
             });
-            $('.bottom_form_useraname_error').hide();
+            $('.bottom_form_username_error').hide();
         }
 
         if (email == '') {
@@ -960,9 +960,9 @@ $(document).ready(function() {
 
                         $.each(obj.error, function(i, item) {
 
-                            $(".bottom_form_" + item.element + "_error").html('');
-
-                            $(".bottom_form_" + item.element + "_error").append('*' + item.message + '<br/>');
+//                            $(".bottom_form_" + item.element + "_error").html('');
+//
+//                            $(".bottom_form_" + item.element + "_error").append('*' + item.message + '<br/>');
 
                             $(".bottom_form_" + item.element + "_error").show();
 
@@ -970,7 +970,7 @@ $(document).ready(function() {
 
                     } else {
 
-                        $(".bottom_form_useraname_error").hide();
+                        $(".bottom_form_username_error").hide();
                         $(".bottom_form_email_error").hide();
                         $(".bottom_form_password_error").hide();
                         $(".bottom_form_confirm_password_error").hide();
@@ -988,7 +988,7 @@ $(document).ready(function() {
 
                 } else {
 
-                    $(".bottom_form_useraname_error").hide();
+                    $(".bottom_form_username_error").hide();
                     $(".bottom_form_email_error").hide();
                     $(".bottom_form_password_error").hide();
                     $(".bottom_form_confirm_password_error").hide();

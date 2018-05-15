@@ -1,0 +1,70 @@
+{
+"section1": {
+    "line1": "O FUTURO DA NEGOCIAÇÃO DE CRIPTO",
+    "line2": "ESTÁ AGORA ABERTO PARA PRÉ-REGISTO",
+    "username_placeholder": "Nome de utilizador",
+    "email_placeholder": "E-mail",
+    "password_placeholder": "Palavra-passe",
+    "confirm_password_placeholder": "Introduza novamente a palavra-passe",
+    "pre_register_btn": "PRÉ-REGISTO",
+    "json_register_success": "Obrigado pelo seu registo!"
+},
+ "section2": {
+    "line1": "Seja o primeiro a registar-se para",
+    "point1": "Verificação de conta simples",
+    "point1_text": "Introdução eficaz de todos os novos clientes. Menos queixas, mais UAU!",
+    "point2": "Apoio ao cliente responsivo 24/7",
+    "point2_text": "Os nossos especialistas de apoio ao cliente estão disponíveis 24/7 por <a href='mailto:support@trade.io'>email</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, ou telefone, para que possa obter respostas em minutos a quaisquer questões que possam surgir.",
+    "point3": "Taxas de depósitos baixas",
+    "point3_text": "A trade.io cobra as mais baixas taxas de levantamentos no mercado, não cobra em depósitos e tem uma comissão fixa de 0,1% em cada transação, para que fique com mais dinheiro seu."
+  },
+"section3": {
+    "line1": "Porque irá adorar a nossa bolsa de câmbios",
+    "point1": "Visual simples e preciso",
+    "point2": "Ferramentas personalizáveis/móveis",
+    "point3": "Crie e guarde até 10 visuais pré-definidos (compatível com vários ecrãs)",
+    "point4": "Perfil personalizável, feed de notícias, chate e mais."
+ },
+"section4": {
+    "point1": "A única plataforma da indústria totalmente personalizável",
+    "point1_text": "Com uma flexibilidade robusta, pode criar o seu ambiente de negociação perfeito alguns minutos depois de iniciar sessão, sem comprometer o desempenho ou a velocidade.",
+    "point2": "Indicadores técnicos para ajudar na sua negociação",
+    "point2_text": "As nossas ferramentas de gráficos por defeito e outras ferramentas técnicas irão permitir-lhe rever dados históricos, que o ajudarão a moldar a sua estratégia de negociação futura.",
+    "point3": "Competições e ofertas regulares",
+    "point3_text": "Seja elegível para beneficiar de ofertas e promoções generosas para ganhar prémios reais, férias VIP de luxo bem como até $100.000 em dinheiro para gastar",
+    "point4": "Servidores mundiais para negociação rápida, sem latência",
+    "point4_text": "Sabemos que tem de negociar com potência e elevada velocidade. Usamos servidores de todo o mundo para manter a latência no mínimo, independentemente do local onde estiver a negociar."
+  },
+"section5": {
+    "title1": "VISÃO GERAL DA NOSSA PLATAFORMA DE CÂMBIOS BETA"
+  },
+"section6": {
+    "title1": "Educação de cripto gratuita",
+    "title2": "SÉRIE DE FORMAÇÃO DE NEGOCIAÇÃO EM BOLSA DE CRIPTO",
+    "video1_title" : "Pesquisar as moedas",
+    "video2_title" : "Sair da transação",
+    "video3_title" : "Negociar tipos diferentes de criptomoedas"
+  },
+"section7": {
+    "title1": "A revolução na negociação começou!",
+    "title2": "Pré-registo agora",
+    "username_placeholder": "Nome de utilizador",
+    "email_placeholder": "E-mail",
+    "password_placeholder": "Palavra-passe",
+    "confirm_password_placeholder": "Introduza novamente a palavra-passe",
+    "pre_register_btn": "PRÉ-REGISTO",
+    "json_register_success": "Obrigado pelo seu registo!"
+ },
+"section8": {
+    "risk_disclaimer_title": "Aviso de risco",
+    "risk_disclaimer_text": "Existem riscos associados à utilização de um sistema de negociação com base na Internet, incluindo, mas não limitado a, falha do hardware, software e ligações à Internet. Concorda que não seremos responsáveis por quaisquer falhas, interrupções, erros, distorções ou atrasos de comunicação que possa ter quando negoceia através dos serviços, independentemente da causa. Não invista mais capital do que o que pode perder. Antes de realizar quaisquer transações, certifique-se de que compreende totalmente os riscos envolvidos e que procura aconselhamento independente, caso necessário. Esta informação não é orientada/destinada a distribuição a residentes em determinados países/jurisdições na lista de sanções da OFAC incluindo, mas não limitado a, Irão, Coreia do Norte, China, Coreia do Sul e EUA. Aplicam-se Termos e Condições."
+  },
+"error_msgs": {
+    "username": "*O nome de utilizador não pode estar vazio!",
+    "email": "*O e-mail é inválido!",
+    "password": "*A palavra-passe deverá ter 8 caracteres, uma minúscula, uma maiúscula, um número e um caracter especial!",
+    "confirm_password": "*Repetir a palavra-passe, que deverá ter 8 caracteres, uma minúscula, uma maiúscula, um número e um caracter especial!",
+    "passwords_do_not_match": "*A palavra-passe e a repetição da palavra-passe não correspondem!",
+    "captcha": "*Captcha é inválido!"
+  }
+}

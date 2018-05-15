@@ -87,6 +87,11 @@ div#videobox {
 /*     font-style: italic; */
 }
 
+.ar .exchange li::before {
+    left: auto;
+    right: -8px;
+}
+
 .exchange li::before {
     content:"";
     border-radius:60px;

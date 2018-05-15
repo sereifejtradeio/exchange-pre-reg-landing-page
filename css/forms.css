@@ -271,9 +271,11 @@ input#firstname-8818173b-5098-40d4-86e9-f9bb88d06fde {
 }
 
 .top-captcha {
-    margin-top: 20px;
+    padding-top: 20px;
     clear: both;
-    display: inline-block;
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top_form_username_error,

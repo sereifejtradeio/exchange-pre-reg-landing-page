@@ -1,0 +1,70 @@
+{
+"section1": {
+    "line1": "MASA DEPAN DAGANGAN KRIPTO",
+    "line2": "SEKARANG DIBUKA UNTUK PRA-PENDAFTARAN",
+    "username_placeholder": "Nama Pengguna",
+    "email_placeholder": "E-mel",
+    "password_placeholder": "Kata Laluan",
+    "confirm_password_placeholder": "Taipkan Semula Kata Laluan",
+    "pre_register_btn": "PRA-DAFTAR",
+    "json_register_success": "Terima kasih kerana mendaftar!"
+},
+"section2": {
+    "line1": "Jadilah orang pertama yang mendaftar",
+    "point1": "Pengesahan Akaun Mudah",
+    "point1_text": "Penerimaan yang cekap bagi semua pelanggan baru. Kurang masalah, lebih banyak kelebihan!",
+    "point2": "Sokongan Responsif 24/7",
+    "point2_text": "Pakar sokongan kami sentiasa bersedia 24/7 melalui <a href='mailto:support@trade.io'>e-mel</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>sembang langsung</a>, atau telefon supaya anda boleh mendapatkan jawapan dalam masa beberapa minit untuk sebarang isu yang mungkin anda hadapi.",
+    "point3": "Bayaran Deposit Rendah",
+    "point3_text": "trade.io mengenakan bayaran pengeluaran yang paling rendah dalam pasaran, tiada bayaran untuk deposit dan komisen tetap 0.1% untuk setiap dagangan, jadi anda boleh menyimpan lebih banyak wang anda."
+  },
+"section3": {
+    "line1": "Kenapa anda akan suka bursa kami",
+    "point1": "Susun atur yang bersih dan kemas",
+    "point2": "Widget boleh ubah/boleh alih",
+    "point3": "Buat dan simpan sehingga 10 susun atur pratetap (serasi berbilang skrin)",
+    "point4": "Profil boleh suai, suapan berita, sembang dan banyak lagi."
+},
+"section4": {
+    "point1": "Satu-satunya platform yang boleh disesuaikan sepenuhnya dalam industri",
+    "point1_text": "Dengan fleksibiliti yang hebat, anda boleh membuat persekitaran dagangan yang sempurna dalam masa beberapa minit selepas mendaftar, tanpa menjejaskan prestasi atau kelajuan.",
+    "point2": "Penunjuk teknikal untuk membantu dagangan anda",
+    "point2_text": "Widget carta lalai dan alat teknikal yang lain akan membolehkan anda mengkaji semula data sejarah yang akan membantu anda menyesuaikan strategi dagangan anda yang akan datang.",
+    "point3": "Pertandingan dan airdrop yang tetap",
+    "point3_text": "Layakkan diri untuk mendapat manfaat daripada airdops & promosi untuk memenangi hadiah sebenar, percutian VIP yang mewah serta sehingga $100,000 wang belanja",
+    "point4": "Pelayan di seluruh dunia untuk dagangan pantas, tiada kependaman",
+    "point4_text": "Kami faham bahawa anda perlu berdagang dengan kuasa dan kelajuan yang hebat. Kami menggunakan pelayan di seluruh dunia untuk memastikan kependaman minimum, di mana-mana sahaja anda memilih untuk berdagang."
+  },
+"section5": {
+    "title1": "LINTAS SEMAK PLATFORM BURSA BETA KAMI"
+  },
+"section6": {
+    "title1": "Pendidikan Kripto Percuma",
+    "title2": "SIRI LATIHAN DAGANGAN KRIPTO BURSA",
+    "video1_title" : "Mengkaji Syiling",
+    "video2_title" : "Meninggalkan Dagangan",
+    "video3_title" : "Jenis Mata Wang Kripto Berbeza"
+ },
+"section7": {
+    "title1": "Revolusi dagangan telah bermula!",
+    "title2": "Pra-Daftar Sekarang",
+    "username_placeholder": "Nama Pengguna",
+    "email_placeholder": "E-mel",
+    "password_placeholder": "Kata Laluan",
+    "confirm_password_placeholder": "Taipkan Semula Kata Laluan",
+    "pre_register_btn": "PRA-DAFTAR",
+    "json_register_success": "Terima kasih kerana mendaftar!"
+  },
+"section8": {
+    "risk_disclaimer_title": "Penafian Risiko",
+    "risk_disclaimer_text": "Terdapat risiko yang berkaitan dengan penggunaan sistem dagangan berasaskan Internet termasuk, tetapi tidak terhad kepada, kegagalan perkakasan, perisian dan sambungan Internet. Anda bersetuju bahawa kami tidak akan bertanggungjawab terhadap apa-apa kegagalan komunikasi, gangguan, kesilapan atau kelewatan yang mungkin anda alami semasa berdagang melalui Perkhidmatan ini, walau apa-apa pun sebabnya. Jangan melabur lebih daripada modal yang anda mampu untuk kehilangan. Anda perlu memastikan bahawa anda memahami sepenuhnya risiko yang terlibat dan mendapatkan nasihat daripada pihak bebas jika perlu, sebelum membuat sebarang transaksi yang sedemikian. Maklumat ini tidak dihalakan/ditujukan untuk diedarkan kepada atau digunakan oleh penduduk negara/bidang kuasa tertentu pada senarai sekatan OFAC termasuk tetapi tidak terhad kepada Iran, Korea Utara, China, Korea Selatan dan AS. *Tertakluk pada terma dan syarat."
+  },
+"error_msgs": {
+    "username": "*Nama pengguna tidak boleh dibiarkan kosong!",
+    "email": "*E-mel tidak sah!",
+    "password": "*Kata laluan mesti mempunyai 8 aksara, satu huruf kecil, satu huruf besar, satu nombor dan satu aksara khas!",
+    "confirm_password": "*Ulang Kata laluan mesti mempunyai 8 aksara, satu huruf kecil, satu huruf besar, satu nombor dan satu aksara khas!",
+    "passwords_do_not_match": "*Kata Laluan dan Ulang Kata Laluan tidak sepadan!",
+    "captcha": "*Captcha tidak sah!"
+  }
+}

@@ -1,14 +1,12 @@
 <?php 
-
     require 'vendor/autoload.php';
     use GeoIp2\Database\Reader;
 
     // This creates the Reader object, which should be reused across
     // lookups.
     $reader = new Reader('GeoIP/GeoLite2-Country.mmdb');
-
-    //$ip = getUserIP();
-
+    
+    // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
     $record = $reader->country($ip);
@@ -23,22 +21,6 @@
         'Vietnam',
         'Japan'
     );
-
-    function getUserIP() {
-        $client  = @$_SERVER['HTTP_CLIENT_IP'];
-        $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
-        $remote  = $_SERVER['REMOTE_ADDR'];
-
-        if(filter_var($client, FILTER_VALIDATE_IP)) {
-            $ip = $client;
-        } elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
-            $ip = $forward;
-        } else {
-            $ip = $remote;
-        }
-
-        return $ip;
-    }
 
     function check_start_session() {
         if(!session_id()) {

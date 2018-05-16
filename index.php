@@ -1,18 +1,57 @@
 <?php 
-   function check_start_session() {
-   	if(!session_id()) {
-   		session_start();
-   	}
-   }
-   
-   function set_csrf_token() {
+
+    require 'vendor/autoload.php';
+    use GeoIp2\Database\Reader;
+
+    // This creates the Reader object, which should be reused across
+    // lookups.
+    $reader = new Reader('GeoIP/GeoLite2-Country.mmdb');
+
+    $ip = getUserIP();
+
+    $record = $reader->country($ip);
+
+    $country_isoCode = $record->country->isoCode; // US
+    $country_name = $record->country->name; // United States
+
+    $autoLoadLanguage = array(
+        'China',
+        'Russia', 
+        'Brazil',
+        'Vietnam',
+        'Japan'
+    );
+
+    function getUserIP() {
+        $client  = @$_SERVER['HTTP_CLIENT_IP'];
+        $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+        $remote  = $_SERVER['REMOTE_ADDR'];
+
+        if(filter_var($client, FILTER_VALIDATE_IP)) {
+            $ip = $client;
+        } elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
+            $ip = $forward;
+        } else {
+            $ip = $remote;
+        }
+
+        return $ip;
+    }
+
+    function check_start_session() {
+        if(!session_id()) {
+            session_start();
+        }
+    }
+
+    function set_csrf_token() {
        $_SESSION['previous_csrf_token'] = $_SESSION['csrf_token'];
        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-   }
-   
-   check_start_session();
-   set_csrf_token();
-   
+    }
+
+    check_start_session();
+    set_csrf_token();
+
     // include i18n class and initialize it
     require_once 'i18n.class.php';
     $i18n = new i18n('lang/lang_{LANGUAGE}.json', 'langcache/', 'en');
@@ -20,8 +59,26 @@
 
     // init object: load language files, parse them if not cached, and so on.
     $i18n->init();
-    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
-    
+
+    if( in_array($country_name, $autoLoadLanguage) ) {
+        $lang = strtolower($country_isoCode);
+    } else {
+        $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
+    }
+
+    // Language Bar
+    switch($lang) {
+        case 'br': 
+            $lang = "pt";
+            break;
+        case 'vn': 
+        $lang = "vi";
+            break;
+        default:
+            $lang = $lang;
+    }    
+
+    // Captcha
     switch($lang) {
         case 'cn': 
             $captcha_language = "zh-CN";
@@ -29,11 +86,17 @@
         case 'jp': 
             $captcha_language = "ja";
             break;
+        case 'br': 
+            $captcha_language = "pt";
+            break;
         default:
             $captcha_language = $lang;
     }
 
-   ?>
+    if( !isset($_GET['lang']) ) {
+        header("Location: ?lang={$lang}");
+    }
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $lang == 'ar' ? 'rtl' : 'ltr' ?>">
     <head>

@@ -9,7 +9,7 @@
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
-    $record = $reader->country($ip);
+    $record = $reader->country('1.1.63.255');
 
     $country_isoCode = $record->country->isoCode; // US
     $country_name = $record->country->name; // United States
@@ -77,7 +77,7 @@
             $captcha_language = $lang;
     }
 
-    if( !isset($_GET['lang']) ) {
+    if( !isset($_GET['lang']) && $lang !='en' ) {
         header("Location: ?lang={$lang}");
     }
 ?>
@@ -189,7 +189,6 @@
                   </a>
                </div>
                 <div id="site-menu">
-                    <?php include('includes/language.php') ?>
                     <ul class="mob-menu">
                         <?php include('includes/menu.php') ?>
                     </ul>

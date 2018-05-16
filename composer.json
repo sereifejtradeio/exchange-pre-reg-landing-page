@@ -2,7 +2,7 @@
     "name": "user/exchange",
     "description": "Exchange pre registration landing page",
     "require": {
-    "php": "7.2.*",
+    "php": "~7.1.14",
         "geoip2/geoip2": "~2.0"
     },
     "authors": [

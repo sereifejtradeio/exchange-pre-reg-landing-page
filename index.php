@@ -1,18 +1,18 @@
 <?php 
 
-    //require 'vendor/autoload.php';
-    //use GeoIp2\Database\Reader;
+    require 'vendor/autoload.php';
+    use GeoIp2\Database\Reader;
 
     // This creates the Reader object, which should be reused across
     // lookups.
-    //$reader = new Reader('GeoIP/GeoLite2-Country.mmdb');
+    $reader = new Reader('GeoIP/GeoLite2-Country.mmdb');
 
-    $ip = getUserIP();
+    $ip = $_SERVER['REMOTE_ADDR'];
 
-    //$record = $reader->country($ip);
+    $record = $reader->country($ip);
 
-    //$country_isoCode = $record->country->isoCode; // US
-    //$country_name = $record->country->name; // United States
+    $country_isoCode = $record->country->isoCode; // US
+    $country_name = $record->country->name; // United States
 
     $autoLoadLanguage = array(
         'China',

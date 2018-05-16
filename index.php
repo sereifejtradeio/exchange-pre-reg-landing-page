@@ -1,7 +1,7 @@
 <?php 
 
-    require 'vendor/autoload.php';
-    use GeoIp2\Database\Reader;
+    //require 'vendor/autoload.php';
+    //use GeoIp2\Database\Reader;
 
     // This creates the Reader object, which should be reused across
     // lookups.
@@ -94,7 +94,7 @@
     }
 
     if( !isset($_GET['lang']) ) {
-        header("Location: ?lang={$lang}");
+        //header("Location: ?lang={$lang}");
     }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

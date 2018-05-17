@@ -56,7 +56,7 @@
             $lang = "pt";
             break;
         case 'vn': 
-        $lang = "vi";
+            $lang = "vi";
             break;
         default:
             $lang = $lang;

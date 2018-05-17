@@ -648,6 +648,7 @@ $(document).ready(function() {
         var csrfToken = $('#csrf_token').val();
         var token = $("#g-recaptcha-response").val();
         var registrationSource = $('#registration_source').val();
+        var userLanguage = $('#user_language').val();
 
         if (username == '') {
             $('#top_form_username').css({
@@ -747,7 +748,7 @@ $(document).ready(function() {
 
 
         //Ajax call for form submission
-        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource;
+        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage;
 
         $.ajax({
             type: "POST",
@@ -837,6 +838,7 @@ $(document).ready(function() {
         var csrfToken = $('#csrf_token_bottom').val();
         var token = $("#g-recaptcha-response-1").val();
         var registrationSource = $('#registration_source_bottom').val();
+        var userLanguage = $('#user_language_bottom').val();
 
         if (username == '') {
             $('#bottom_form_username').css({
@@ -936,7 +938,7 @@ $(document).ready(function() {
 
 
         //Ajax call for form submission
-        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource;
+        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage;
 
         $.ajax({
             type: "POST",

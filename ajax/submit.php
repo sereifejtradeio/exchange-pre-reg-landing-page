@@ -12,6 +12,7 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
     $confirmPassword = strip_tags( trim($_POST['confirm_password']) );
     //$referredByAffiliateId = strip_tags( trim($_COOKIE['affiliateID']) );
     $registrationSource = strip_tags( trim($_POST['registrationSource']) );
+    $userLanguage = strip_tags( trim($_POST['userLanguage']) );
     
     //Verify reCaptcha Server Side
     $post_data = http_build_query(
@@ -99,7 +100,8 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
         'password' => $password,
         'confirmPassword' => $confirmPassword,
         'referredByAffiliateId' => isset( $referredByAffiliateId ) ? $referredByAffiliateId : null,
-        'registrationSource' => $registrationSource
+        'registrationSource' => $registrationSource,
+        'userLanguage' => $userLanguage
     );
 
     $request_json = '{
@@ -108,7 +110,8 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
         "password": "' . $fields['password'] . '",
         "confirmPassword": "' . $fields['confirmPassword'] . '",
         "referredByAffiliateId": "' . $fields['referredByAffiliateId'] . '",
-        "registrationSource": "' . $fields['registrationSource'] . '"
+        "registrationSource": "' . $fields['registrationSource'] . '",
+        "userLanguage": "' . $fields['userLanguage'] . '"
     }';
     
     

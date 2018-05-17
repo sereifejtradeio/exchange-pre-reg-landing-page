@@ -77,6 +77,21 @@
             $captcha_language = $lang;
     }
 
+    $languageFullName = array(
+        'en' => 'English',
+        'ar' => 'Arabic',
+        'cn' => 'Chinese',
+        'es' => 'Spanish',
+        'id' => 'Indonesian',
+        'jp' => 'Japanese',
+        'ko' => 'Korean',
+        'ms' => 'Malay',
+        'ru' => 'Russian',
+        'th' => 'Thai',
+        'vi' => 'Vietnamese',
+        'pt' => 'Portuguese'
+    );
+
     if( !isset($_GET['lang']) && $lang !='en' ) {
         header("Location: ?lang={$lang}");
     }
@@ -217,6 +232,7 @@
                      <div id="json-register-success"><?php echo L::section1_json_register_success; ?></div>
                      <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source" value="Exchange-Pre-Registration">
+                      <input type="hidden" name="user_language" id="user_language" value="<?php echo $languageFullName[$lang]; ?>">
                      <div class="field-left top-username">
                         <input type="text" name="top_form_username" id="top_form_username" placeholder="<?php echo L::section1_username_placeholder; ?>" required="required" />
                         <div class="top_form_username_error"><?php echo L::error_msgs_username; ?></div>
@@ -439,6 +455,7 @@
                      <div id="json-register-success-bottom"><?php echo L::section7_json_register_success; ?></div>
                      <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
+                      <input type="hidden" name="user_language_bottom" id="user_language_bottom" value="<?php echo $languageFullName[$lang]; ?>">
                      <div class="field-left top-username">
                         <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="<?php echo L::section7_username_placeholder; ?>" />
                         <div class="bottom_form_username_error"><?php echo L::error_msgs_username; ?></div>

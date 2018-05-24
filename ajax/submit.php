@@ -13,6 +13,11 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
     //$referredByAffiliateId = strip_tags( trim($_COOKIE['affiliateID']) );
     $registrationSource = strip_tags( trim($_POST['registrationSource']) );
     $userLanguage = strip_tags( trim($_POST['userLanguage']) );
+    $utmSource = strip_tags( trim($_POST['utmSource']) );
+    $utmMedium = strip_tags( trim($_POST['utmMedium']) );
+    $utmCampaign = strip_tags( trim($_POST['utmCampaign']) );
+    $utmTerm = strip_tags( trim($_POST['utmTerm']) );
+    $utmContent = strip_tags( trim($_POST['utmContent']) );
     
     //Verify reCaptcha Server Side
     $post_data = http_build_query(
@@ -101,9 +106,14 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
         'confirmPassword' => $confirmPassword,
         'referredByAffiliateId' => isset( $referredByAffiliateId ) ? $referredByAffiliateId : null,
         'registrationSource' => $registrationSource,
-        'userLanguage' => $userLanguage
+        'userLanguage' => $userLanguage,
+        'utmSource' => $utmSource,
+        'utmMedium' => $utmMedium,
+        'utmCampaign' => $utmCampaign,
+        'utmTerm' => $utmTerm,
+        'utmContent' => $utmContent
     );
-
+    
     $request_json = '{
         "username": "' . $fields['username'] . '",
         "email": "' . $fields['email'] . '",
@@ -111,7 +121,12 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
         "confirmPassword": "' . $fields['confirmPassword'] . '",
         "referredByAffiliateId": "' . $fields['referredByAffiliateId'] . '",
         "registrationSource": "' . $fields['registrationSource'] . '",
-        "userLanguage": "' . $fields['userLanguage'] . '"
+        "userLanguage": "' . $fields['userLanguage'] . '",
+        "utm_source": "' . $fields['utmSource'] . '",
+        "utm_medium": "' . $fields['utmMedium'] . '",
+        "utm_campaign": "' . $fields['utmCampaign'] . '",
+        "utm_term": "' . $fields['utmTerm'] . '",
+        "utm_content": "' . $fields['utmContent'] . '"
     }';
     
     

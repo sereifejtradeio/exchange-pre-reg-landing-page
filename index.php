@@ -1,4 +1,5 @@
 <?php 
+
     require 'vendor/autoload.php';
     use GeoIp2\Database\Reader;
 
@@ -91,9 +92,37 @@
         'vi' => 'Vietnamese',
         'pt' => 'Portuguese'
     );
+    
+    // Get utm parameters
+    $utm_source = filter_input(INPUT_GET, 'utm_source', FILTER_SANITIZE_ENCODED);
+    $utm_medium = filter_input(INPUT_GET, 'utm_medium', FILTER_SANITIZE_ENCODED);
+    $utm_campaign = filter_input(INPUT_GET, 'utm_campaign', FILTER_SANITIZE_ENCODED);
+    $utm_term = filter_input(INPUT_GET, 'utm_term', FILTER_SANITIZE_ENCODED);
+    $utm_content = filter_input(INPUT_GET, 'utm_content', FILTER_SANITIZE_ENCODED);
 
     if( !isset($_GET['lang']) && $lang !='en' ) {
-        header("Location: ?lang={$lang}");
+        
+        if( !empty($utm_source) ) {
+            $utm_parameters = '&utm_source=' . $utm_source;
+        }
+        
+        if( !empty($utm_medium) ) {
+            $utm_parameters .= '&utm_medium=' . $utm_medium;
+        }
+        
+        if( !empty($utm_campaign) ) {
+            $utm_parameters .= '&utm_campaign=' . $utm_campaign;
+        }
+        
+        if( !empty($utm_term) ) {
+            $utm_parameters .= '&utm_term=' . $utm_term;
+        }
+        
+        if( !empty($utm_content) ) {
+            $utm_parameters .= '&utm_content=' . $utm_content;
+        }
+        
+        header("Location: ?lang={$lang}{$utm_parameters}");
     }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -233,6 +262,11 @@
                      <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source" value="Exchange-Pre-Registration">
                       <input type="hidden" name="user_language" id="user_language" value="<?php echo $languageFullName[$lang]; ?>">
+                      <input type="hidden" name="utm_source" id="utm_source" value="<?php echo $utm_source; ?>">
+                      <input type="hidden" name="utm_medium" id="utm_medium" value="<?php echo $utm_medium; ?>">
+                      <input type="hidden" name="utm_campaign" id="utm_campaign" value="<?php echo $utm_campaign; ?>">
+                      <input type="hidden" name="utm_term" id="utm_term" value="<?php echo $utm_term; ?>">
+                      <input type="hidden" name="utm_content" id="utm_content" value="<?php echo $utm_content; ?>">
                      <div class="field-left top-username">
                         <input type="text" name="top_form_username" id="top_form_username" placeholder="<?php echo L::section1_username_placeholder; ?>" required="required" />
                         <div class="top_form_username_error"><?php echo L::error_msgs_username; ?></div>
@@ -456,6 +490,11 @@
                      <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
                      <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
                       <input type="hidden" name="user_language_bottom" id="user_language_bottom" value="<?php echo $languageFullName[$lang]; ?>">
+                      <input type="hidden" name="utm_source_bottom" id="utm_source_bottom" value="<?php echo $utm_source; ?>">
+                      <input type="hidden" name="utm_medium_bottom" id="utm_medium_bottom" value="<?php echo $utm_medium; ?>">
+                      <input type="hidden" name="utm_campaign_bottom" id="utm_campaign_bottom" value="<?php echo $utm_campaign; ?>">
+                      <input type="hidden" name="utm_term_bottom" id="utm_term_bottom" value="<?php echo $utm_term; ?>">
+                      <input type="hidden" name="utm_content_bottom" id="utm_content_bottom" value="<?php echo $utm_content; ?>">
                      <div class="field-left top-username">
                         <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="<?php echo L::section7_username_placeholder; ?>" />
                         <div class="bottom_form_username_error"><?php echo L::error_msgs_username; ?></div>

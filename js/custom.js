@@ -649,7 +649,13 @@ $(document).ready(function() {
         var token = $("#g-recaptcha-response").val();
         var registrationSource = $('#registration_source').val();
         var userLanguage = $('#user_language').val();
+        var utmSource = $('#utm_source').val();
+        var utmMedium = $('#utm_medium').val();
+        var utmCampaign = $('#utm_campaign').val();
+        var utmTerm = $('#utm_term').val();
+        var utmContent = $('#utm_content').val();
 
+        
         if (username == '') {
             $('#top_form_username').css({
                 "border-color": "#d76468"
@@ -748,7 +754,7 @@ $(document).ready(function() {
 
 
         //Ajax call for form submission
-        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage;
+        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage + '&utmSource=' + utmSource + '&utmMedium=' + utmMedium + '&utmCampaign=' + utmCampaign + '&utmTerm=' + utmTerm + '&utmContent=' + utmContent;
 
         $.ajax({
             type: "POST",
@@ -839,6 +845,11 @@ $(document).ready(function() {
         var token = $("#g-recaptcha-response-1").val();
         var registrationSource = $('#registration_source_bottom').val();
         var userLanguage = $('#user_language_bottom').val();
+        var utmSource = $('#utm_source_bottom').val();
+        var utmMedium = $('#utm_medium_bottom').val();
+        var utmCampaign = $('#utm_campaign_bottom').val();
+        var utmTerm = $('#utm_term_bottom').val();
+        var utmContent = $('#utm_content_bottom').val();
 
         if (username == '') {
             $('#bottom_form_username').css({
@@ -938,7 +949,7 @@ $(document).ready(function() {
 
 
         //Ajax call for form submission
-        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage;
+        var dataString = 'username=' + username + '&email=' + email + '&password=' + password + '&confirm_password=' + confirmPassword + '&csrf_token=' + csrfToken + '&token=' + token + '&registrationSource=' + registrationSource + '&userLanguage=' + userLanguage + '&utmSource=' + utmSource + '&utmMedium=' + utmMedium + '&utmCampaign=' + utmCampaign + '&utmTerm=' + utmTerm + '&utmContent=' + utmContent;
 
         $.ajax({
             type: "POST",

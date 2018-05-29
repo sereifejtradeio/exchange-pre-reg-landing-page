@@ -60,7 +60,7 @@ switch ($lang) {
         $selected_lang = '<li><span class="flag-icon flag-icon-vn"></span>&nbsp VI</li>';
         break;
     case 'pt':
-        $selected_lang = '<li><span class="flag-icon flag-icon-pt"></span>&nbsp PT</li>';
+        $selected_lang = '<li><span class="flag-icon flag-icon-br"></span>&nbsp PT</li>';
         break;
     default:
         $selected_lang = '<li><span class="flag-icon flag-icon-gb"></span>&nbsp EN</li>';
@@ -104,7 +104,7 @@ switch ($lang) {
                 href="<?= $uri[0] ?>?lang=vi<?= $lang_uri ?>"><span class="flag-icon flag-icon-vn"></span>&nbsp VI</a>
     </li>
     <li <?php echo($lang == 'pt' ? 'style="display:none;"' : ''); ?>><a
-                href="<?= $uri[0] ?>?lang=pt<?= $lang_uri ?>"><span class="flag-icon flag-icon-pt"></span>&nbsp PT</a>
+                href="<?= $uri[0] ?>?lang=pt<?= $lang_uri ?>"><span class="flag-icon flag-icon-br"></span>&nbsp PT</a>
     </li>
 
 </ul>

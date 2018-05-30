@@ -6,7 +6,7 @@
     "email_placeholder": "E-mail",
     "password_placeholder": "Senha",
     "confirm_password_placeholder": "Digite novamente a senha",
-    "pre_register_btn": "PRE-CADASTRO",
+    "pre_register_btn": "PRÉ-CADASTRO",
     "json_register_success": "Obrigado pelo seu registo!"
 },
  "section2": {
@@ -47,7 +47,7 @@
   },
 "section7": {
     "title1": "A revolução na negociação começou!",
-    "title2": "Pre-cadastre agora",
+    "title2": "Pré-cadastre agora",
     "username_placeholder": "Nome de utilizador",
     "email_placeholder": "E-mail",
     "password_placeholder": "Palavra-passe",

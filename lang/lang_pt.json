@@ -48,11 +48,11 @@
 "section7": {
     "title1": "A revolução na negociação começou!",
     "title2": "Pré-cadastre agora",
-    "username_placeholder": "Nome de utilizador",
+    "username_placeholder": "Nome do usuário",
     "email_placeholder": "E-mail",
-    "password_placeholder": "Palavra-passe",
-    "confirm_password_placeholder": "Introduza novamente a palavra-passe",
-    "pre_register_btn": "PRÉ-REGISTO",
+    "password_placeholder": "Senha",
+    "confirm_password_placeholder": "Digite novamente a senha",
+    "pre_register_btn": "PRÉ-CADASTRO",
     "json_register_success": "Obrigado pelo seu registo!"
  },
 "section8": {

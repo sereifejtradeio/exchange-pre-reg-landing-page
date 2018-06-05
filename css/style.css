@@ -72,11 +72,39 @@ div#videobox {
 }
 
 #introduction h1
+ {
+     text-align:center;
+     padding-top:60px;
+     color: white;
+ }
+
+#introduction h2
 {
     text-align:center;
-    padding-top:60px;
+    padding-top:30px;
+    color: white;
+    line-height: 30px;
+}
+
+#introduction h3
+{
+    text-align:center;
+    padding-top:20px;
     color: white;
 }
+
+.line2 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.line3 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
 .exchange li {
     list-style: none;
     padding-top: 5px;
@@ -279,16 +307,16 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 48px;
-    color: #4a4a4a;
+    color: #4A4A44;
 }
 
 h3 {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 48px;
-    color: #4a4a4a;
+    color: #4A4A44;
 }
 
 #video-sr-wrapper {

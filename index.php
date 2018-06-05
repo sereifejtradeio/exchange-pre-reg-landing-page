@@ -10,6 +10,8 @@
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
+    //$ip = '46.103.255.255';
+
     $record = $reader->country($ip);
 
     $country_isoCode = $record->country->isoCode; // US
@@ -331,6 +333,8 @@
          <div id="introduction">
             <div id="particle-canvas">
                <h1><?php echo L::section2_line1; ?></h1>
+                <span class="line2"><h2><?php echo L::section2_line2; ?></h2></span>
+                <span class="line3"><p><?php echo L::section2_line3; ?></p></span>
                <!-- the container that hold the features -->
                <ul class="clear-fix">
                   <li class="states state_1" data-aos="fade-down">

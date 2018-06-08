@@ -94,15 +94,13 @@ div#videobox {
 }
 
 .line2 {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     display: block;
 }
 
-.line3 {
-    width: 50%;
-    margin: 0 auto;
-    display: block;
+.uppercase {
+    text-transform: uppercase;
 }
 
 .exchange li {
@@ -2126,6 +2124,7 @@ div#footer {
 
 .logo-btm {
     position: relative;
+    top: 40px;
     /* margin-bottom: 48px; */
 }
 

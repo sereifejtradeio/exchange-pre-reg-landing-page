@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     require 'vendor/autoload.php';
     use GeoIp2\Database\Reader;
@@ -6,11 +6,11 @@
     // This creates the Reader object, which should be reused across
     // lookups.
     $reader = new Reader('GeoIP/GeoLite2-Country.mmdb');
-    
+
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
-    //$ip = '46.103.255.255';
+    $ip = '46.103.255.255';
 
     $record = $reader->country($ip);
 
@@ -19,7 +19,7 @@
 
     $autoLoadLanguage = array(
         'China',
-        'Russia', 
+        'Russia',
         'Brazil',
         'Vietnam',
         'Japan'
@@ -55,25 +55,25 @@
 
     // Language Bar
     switch($lang) {
-        case 'br': 
+        case 'br':
             $lang = "pt";
             break;
-        case 'vn': 
+        case 'vn':
             $lang = "vi";
             break;
         default:
             $lang = $lang;
-    }    
+    }
 
     // Captcha
     switch($lang) {
-        case 'cn': 
+        case 'cn':
             $captcha_language = "zh-CN";
             break;
-        case 'jp': 
+        case 'jp':
             $captcha_language = "ja";
             break;
-        case 'br': 
+        case 'br':
             $captcha_language = "pt";
             break;
         default:
@@ -94,7 +94,7 @@
         'vi' => 'Vietnamese',
         'pt' => 'Portuguese'
     );
-    
+
     // Get utm parameters
     $utm_source = filter_input(INPUT_GET, 'utm_source', FILTER_SANITIZE_ENCODED);
     $utm_medium = filter_input(INPUT_GET, 'utm_medium', FILTER_SANITIZE_ENCODED);
@@ -103,27 +103,27 @@
     $utm_content = filter_input(INPUT_GET, 'utm_content', FILTER_SANITIZE_ENCODED);
 
     if( !isset($_GET['lang']) && $lang !='en' ) {
-        
+
         if( !empty($utm_source) ) {
             $utm_parameters = '&utm_source=' . $utm_source;
         }
-        
+
         if( !empty($utm_medium) ) {
             $utm_parameters .= '&utm_medium=' . $utm_medium;
         }
-        
+
         if( !empty($utm_campaign) ) {
             $utm_parameters .= '&utm_campaign=' . $utm_campaign;
         }
-        
+
         if( !empty($utm_term) ) {
             $utm_parameters .= '&utm_term=' . $utm_term;
         }
-        
+
         if( !empty($utm_content) ) {
             $utm_parameters .= '&utm_content=' . $utm_content;
         }
-        
+
         header("Location: ?lang={$lang}{$utm_parameters}");
     }
 ?>
@@ -184,7 +184,7 @@
         <script type="text/javascript" src="api2/api.js"></script>
         <!--AOS library-->
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        
+
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -306,7 +306,7 @@
             </video>
             <!-- template thumbnails wrapper
                <div id="template_thumb_wrapper">
-               
+
                	<div class="template_thumb">
                		<div class="template_thumb_img" data-temp="1"></div>
                	</div>
@@ -322,9 +322,9 @@
                	<div class="template_thumb">
                		<div class="template_thumb_img" data-temp="5"></div>
                	</div>
-               
+
                </div>
-               
+
                -->
          </div>
          <!-- header simulation -->
@@ -332,15 +332,15 @@
          <!-- introduction - 3 features -->
          <div id="introduction">
             <div id="particle-canvas">
-               <h1><?php echo L::section2_line1; ?></h1>
-                <span class="line2"><h2><?php echo L::section2_line2; ?></h2></span>
-                <span class="line3"><p><?php echo L::section2_line3; ?></p></span>
+                <h2><?php echo L::section2_line2; ?></h2>
+                <h3 class="line2"><?php echo L::section2_line3; ?></h3>
+                <h2 class="uppercase"><?php echo L::section2_line1; ?></h2>
                <!-- the container that hold the features -->
                <ul class="clear-fix">
                   <li class="states state_1" data-aos="fade-down">
                      <h4><i class="fas fa-user-circle"></i></h4>
                      <h3><?php echo L::section2_point1; ?></h3>
-                     <p><?php echo L::section2_point1_text; ?><br><br></p>
+                     <h3><?php echo L::section2_point1_text; ?></h3>
                   </li>
                   <li class="states state_2" data-aos="fade-down" data-aos-delay="300">
                      <h4><i class="fas fa-phone-square"></i></h4>
@@ -544,11 +544,11 @@
                </a>
             </div>
              <div id="risk-disclaimer">
-                <strong><?php echo L::section8_risk_disclaimer_title; ?></strong><br><?php echo L::section8_risk_disclaimer_text; ?> 
+                <strong><?php echo L::section8_risk_disclaimer_title; ?></strong><br><?php echo L::section8_risk_disclaimer_text; ?>
             </div>
             <div id="copyright">
                 <div>
-                  © trade.io <?php echo date('Y');?> 
+                  © trade.io <?php echo date('Y');?>
                </div>
             </div>
          </div>
@@ -556,10 +556,10 @@
       <script>
          var recaptcha1;
          var recaptcha2;
-         
+
          var myCallBack = function() {
-         
-         
+
+
              if( document.getElementById('gReCaptcha') !=null ) {
                  //Render the recaptcha1 on the element with ID "recaptcha1"
                  recaptcha1 = grecaptcha.render('gReCaptcha', {
@@ -567,7 +567,7 @@
                    'theme' : 'light'
                  });
              }
-         
+
              if( document.getElementById('gReCaptchaBottom') !=null ) {
                  //Render the recaptcha2 on the element with ID "recaptcha2"
                  recaptcha2 = grecaptcha.render('gReCaptchaBottom', {
@@ -575,7 +575,7 @@
                    'theme' : 'light'
                  });
              }
-         
+
          };
           // Live Chat
           var chatButton;
@@ -595,7 +595,7 @@
             })(document, 'https://tio.ladesk.com/scripts/track.js', function (e) {
                 chatButton = LiveAgent.createButton('7cca1741', e);
             });
-            
+
             $(".languagepicker").css("height", 0);
             // Language Menu
             $('.languagepicker').hover(function (e) {

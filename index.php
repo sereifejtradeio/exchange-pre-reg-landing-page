@@ -348,7 +348,7 @@
                      <p><?php echo L::section2_point2_text; ?><br></p>
                   </li>
                   <li class="states state_4" data-aos="fade-down" data-aos-delay="600">
-                     <h4><i class="fas fa-exclamation-circle"></i></h4>
+                     <h4><i class="fas fa-lock"></i></h4>
                      <h3><?php echo L::section2_point3; ?></h3>
                      <p><?php echo L::section2_point3_text; ?></p>
                   </li>

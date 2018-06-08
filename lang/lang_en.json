@@ -16,9 +16,9 @@
     "point1": "Easy Account Verification",
     "point1_text": "Efficient onboarding of all new clients. Less groan, more yay!",
     "point2": "24/7 Responsive Support",
-    "point2_text": "Our support specialists are on call 24/7 by <a href='mailto:support@trade.io'>email</a>, <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, or telephone so you can get answers in minutes to any issues you might face.",
-    "point3": "Low Deposit Fees",
-    "point3_text": "trade.io charges the lowest withdrawal fees in the market, nothing on deposits, and a flat 0.1% commission on each trade, so you can keep more of your money."
+    "point2_text": "Our support specialists are on available 24/7 by <a href='mailto:support@trade.io'>email</a>, or <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, so you can get answers in minutes to any issues you might face.",
+    "point3": "Secure Trading Environment",
+    "point3_text": "Our platform has gone through extensive penetration testing in order to protect our users.  Our logins are also secure and require two factor authentication."
   },
 "section3": {
     "line1": "Why you will love our exchange",

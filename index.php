@@ -334,7 +334,7 @@
             <div id="particle-canvas">
                 <h2><?php echo L::section2_line2; ?></h2>
                 <h3 class="line2"><?php echo L::section2_line3; ?></h3>
-                <h2 class="uppercase"><?php echo L::section2_line1; ?></h2>
+                <h1 class="uppercase"><?php echo L::section2_line1; ?></h1>
                <!-- the container that hold the features -->
                <ul class="clear-fix">
                   <li class="states state_1" data-aos="fade-down">

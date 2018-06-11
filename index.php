@@ -340,7 +340,7 @@
                   <li class="states state_1" data-aos="fade-down">
                      <h4><i class="fas fa-user-circle"></i></h4>
                      <h3><?php echo L::section2_point1; ?></h3>
-                     <h3><?php echo L::section2_point1_text; ?></h3>
+                     <p><?php echo L::section2_point1_text; ?></p>
                   </li>
                   <li class="states state_2" data-aos="fade-down" data-aos-delay="300">
                      <h4><i class="far fa-life-ring"></i></h4>

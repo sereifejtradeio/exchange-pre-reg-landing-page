@@ -18,7 +18,7 @@
     "point2": "24/7 Responsive Support",
     "point2_text": "Our support specialists are on available 24/7 by <a href='mailto:support@trade.io'>email</a>, or <a href='javascript:void(0)' onclick='chatButton.onClick();'>live chat</a>, so you can get answers in minutes to any issues you might face.",
     "point3": "Secure Trading Environment",
-    "point3_text": "Our platform has gone through extensive penetration testing in order to protect our users.  Our logins are also secure and require two factor authentication."
+    "point3_text": "Multi-layered sign-in authentication and 24/7 monitoring by in-house cybersecurity team."
   },
 "section3": {
     "line1": "Why you will love our exchange",
@@ -34,8 +34,8 @@
     "point2_text": "Our default charting widgets and other technical tools will allow you to review historical data that will help you to tailor your future trading strategy.",
     "point3": "Regular competitions and airdrops",
     "point3_text": "Be eligible to benefit from generous airdops & promotions to win real prizes, luxury VIP holidays as well as up to $100,000 spending money",
-    "point4": "Worldwide servers for fast trading, no latency",
-    "point4_text": "We understand that you need to trade with great power and great speed. We utilise servers worldwide to keep latency to a minimum, wherever you choose to trade from."
+    "point4": "Worldwide servers for fast trading, low latency",
+    "point4_text": "We understand that you need to trade with great power and great speed. We utilize a distributed architecture with multiple concurrent instances to keep latency to a minimum, wherever you choose to trade from."
   },
 "section5": {
     "title1": "WALKTRHOUGH OF OUR BETA EXCHANGE PLATFORM"

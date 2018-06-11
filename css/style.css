@@ -1502,7 +1502,7 @@ p.paragraph2 {
 
 #pes p {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    line-height: 36px;
+    /*line-height: 36px;*/
     color: #FFF;
     font-size: 18px;
     font-weight: 800;

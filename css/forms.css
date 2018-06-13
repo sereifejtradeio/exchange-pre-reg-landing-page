@@ -514,7 +514,7 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
         float: right;
         left: auto;
         right: 15px;
-        z-index: 99999;
+        z-index: 9999999;
     }
     
     .container .socialbar {

@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    AOS.init();
+    AOS.init({
+        disable: 'mobile'
+    });
     var canvasDiv = document.getElementById('particle-canvas');
     var options = {
         particleColor: '#304277',

@@ -20,8 +20,8 @@
       <file leaf-file-name="forms.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/forms.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="610" column="20" selection-start-line="610" selection-start-column="20" selection-end-line="610" selection-end-column="20" />
+            <state relative-caret-position="220">
+              <caret line="598" column="10" selection-start-line="598" selection-start-column="10" selection-end-line="598" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -42,6 +42,7 @@
       <find>Secure Trading EnvironmentTrusted and Secure</find>
       <find>section2</find>
       <find>#play</find>
+      <find>.login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,7 +149,8 @@
       <workItem from="1528698389453" duration="551000" />
       <workItem from="1528703014585" duration="1128000" />
       <workItem from="1528871612903" duration="1230000" />
-      <workItem from="1529053824125" duration="152000" />
+      <workItem from="1529053824125" duration="1554000" />
+      <workItem from="1529063010033" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="Style fixes">
       <created>1528463982170</created>
@@ -175,13 +177,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6445000" />
+    <option name="totallyTimeSpent" value="7934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -205,19 +207,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -301,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/forms.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="610" column="20" selection-start-line="610" selection-start-column="20" selection-end-line="610" selection-end-column="20" />
+        <state relative-caret-position="220">
+          <caret line="598" column="10" selection-start-line="598" selection-start-column="10" selection-end-line="598" selection-end-column="10" />
         </state>
       </provider>
     </entry>

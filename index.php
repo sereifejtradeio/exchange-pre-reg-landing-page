@@ -298,7 +298,7 @@
                </div> -->
             </div>
             <div id="opacity-extra"></div>
-            <div id="play"></div>
+
 
             <div class="layer"></div>
             <div class="gradient-video"></div>
@@ -329,6 +329,7 @@
                </div>
 
                -->
+		 <div id="play"></div>
 		 <a href="#footer" id="" class="btn btn-primary btn-block btn-large btn-header">PRE-REGISTER</a>
          </div>
          <!-- header simulation -->

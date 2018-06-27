@@ -184,6 +184,7 @@
         <script type="text/javascript" src="api2/api.js"></script>
         <!--AOS library-->
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<script src="js/smoothscroll.js"></script>
 
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -256,8 +257,8 @@
                   });
                   </script>
                   -->
-               <div class="login">
-                  <!--	<h1>Pre-register Now</h1>-->
+              <!--  <div class="login">
+                  	<h1>Pre-register Now</h1>
                   <form method="post" class="RegisterForm" id="RegisterFormTop" action="">
                      <div id="json-register-error"></div>
                      <div id="json-register-success"><?php echo L::section1_json_register_success; ?></div>
@@ -294,16 +295,18 @@
                         <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large"><?php echo L::section1_pre_register_btn; ?></button>
                      </div>
                   </form>
-               </div>
+               </div> -->
             </div>
             <div id="opacity-extra"></div>
             <div id="play"></div>
+
             <div class="layer"></div>
             <div class="gradient-video"></div>
             <video playsinline="" autoplay="" muted="" loop="" poster="" id="bgvid">
                <source src="video/loop_2.webm" type="video/webm">
                <source src="video/loop_2.mp4" type="video/mp4">
             </video>
+
             <!-- template thumbnails wrapper
                <div id="template_thumb_wrapper">
 
@@ -326,52 +329,14 @@
                </div>
 
                -->
+		 <a href="#footer" id="" class="btn btn-primary btn-block btn-large btn-header">PRE-REGISTER</a>
          </div>
          <!-- header simulation -->
+		  
          <div id="header_blank"></div>
+		  
          <!-- introduction - 3 features -->
-         <div id="introduction">
-            <div id="particle-canvas">
-                <h2><?php echo L::section2_line2; ?></h2>
-                <h3 class="line2"><?php echo L::section2_line3; ?></h3>
-                <h1 class="uppercase"><?php echo L::section2_line1; ?></h1>
-               <!-- the container that hold the features -->
-               <ul class="clear-fix">
-                  <li class="states state_1" data-aos="fade-down">
-                     <h4><i class="fas fa-user-circle"></i></h4>
-                     <h3><?php echo L::section2_point1; ?></h3>
-                     <p><?php echo L::section2_point1_text; ?></p>
-                  </li>
-                  <li class="states state_2" data-aos="fade-down" data-aos-delay="300">
-                     <h4><i class="far fa-life-ring"></i></h4>
-                     <h3><?php echo L::section2_point2; ?></h3>
-                     <p><?php echo L::section2_point2_text; ?><br></p>
-                  </li>
-                  <li class="states state_4" data-aos="fade-down" data-aos-delay="600">
-                     <h4><i class="fas fa-lock"></i></h4>
-                     <h3><?php echo L::section2_point3; ?></h3>
-                     <p><?php echo L::section2_point3_text; ?></p>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <!-- information about the dashboard -->
-         <div id="dashboard" class="" >
-            <div id="dashboard_left" data-aos="fade-up"></div>
-            <div id="dashboard_right" data-aos="fade-down">
-               <div class="textwrap" id="DashLight" >
-                  <h2><span></span><?php echo L::section3_line1; ?></h2>
-                  <ul class="exchange clear-fix" >
-                     <li  data-aos-delay="0"><?php echo L::section3_point1; ?></li>
-                     <li data-aos-delay="100"><?php echo L::section3_point2; ?></li>
-                     <li  data-aos-delay="200"><?php echo L::section3_point3; ?></li>
-                     <li  data-aos-delay="300"><?php echo L::section3_point4; ?></li>
-                  </ul>
-                  <br>
-                  <!--				<a href="#" class="open_register font-semibold" style="text-transform: uppercase;">Register an account</a>-->
-               </div>
-            </div>
-         </div>
+		  <!--		  Start of Section-->
          <div id="pes" class="">
             <div id="pes_left" data-aos="fade-down">
                <div class="textwrap pick">
@@ -411,7 +376,53 @@
                </div>
             </div>
          </div>
-         <div id="Walkthrough" data-aos="fade-up" data-aos-delay="1300">
+<!--		  end of Section-->
+         <div id="introduction">
+            <div id="particle-canvas">
+<!--                <h2><?php echo L::section2_line2; ?></h2>-->
+<!--                <h3 class="line2"><?php echo L::section2_line3; ?></h3>-->
+                <h1 class="uppercase"><?php echo L::section2_line1; ?></h1>
+               <!-- the container that hold the features -->
+               <ul class="clear-fix">
+                  <li class="states state_1" data-aos="fade-down">
+                     <h4><i class="fas fa-user-circle"></i></h4>
+                     <h3><?php echo L::section2_point1; ?></h3>
+                     <p><?php echo L::section2_point1_text; ?></p>
+                  </li>
+                  <li class="states state_2" data-aos="fade-down" data-aos-delay="300">
+                     <h4><i class="far fa-life-ring"></i></h4>
+                     <h3><?php echo L::section2_point2; ?></h3>
+                     <p><?php echo L::section2_point2_text; ?><br></p>
+                  </li>
+                  <li class="states state_4" data-aos="fade-down" data-aos-delay="600">
+                     <h4><i class="fas fa-lock"></i></h4>
+                     <h3><?php echo L::section2_point3; ?></h3>
+                     <p><?php echo L::section2_point3_text; ?></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- information about the dashboard -->
+         <div id="dashboard" class="" >
+            <div id="dashboard_left" data-aos="fade-up"></div>
+            <div id="dashboard_right" data-aos="fade-down">
+               <div class="textwrap" id="DashLight" >
+                  <h2><span></span><?php echo L::section3_line1; ?></h2>
+                  <ul class="exchange clear-fix" >
+                     <li  data-aos-delay="0"><?php echo L::section3_point1; ?></li>
+                     <li data-aos-delay="100"><?php echo L::section3_point2; ?></li>
+                     <li  data-aos-delay="200"><?php echo L::section3_point3; ?></li>
+                     <li  data-aos-delay="300"><?php echo L::section3_point4; ?></li>
+                  </ul>
+                  <br>
+                  <!--				<a href="#" class="open_register font-semibold" style="text-transform: uppercase;">Register an account</a>-->
+               </div>
+            </div>
+         </div>
+<!--		  Start of Section-->
+
+<!--		  end of Section-->
+         <div id="Walkthrough" data-aos="fade-up" data-aos-delay="300">
             <br>
             <br>
             <h3><?php echo L::section5_title1; ?></h3>

@@ -32,7 +32,7 @@
     z-index: 99999;
     margin: auto;
     text-align: center;
-    background: rgba(41, 51, 68, 0.73);
+    background: rgba(41, 51, 68, 0.97);
     padding: 10px;
     /*     box-shadow: inset black 0px 0px 14px 1px; */
 }
@@ -53,6 +53,7 @@ div#Walkthrough h1, #Walkthrough h3, div#Walkthrough h2 {
 div#videobox {
     margin: auto;
     text-align: center;
+    /* max-width: 690px; */
 }
 .videoitem {
     display: inline-block;
@@ -244,7 +245,7 @@ html {
 
 body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    background-color: #FFF;
+    background-color: #1c2748;
     font-size: 16px!important;
 }
 
@@ -273,8 +274,8 @@ body {
 /* font styles */
 
 .font-light {
-    font-family: 'source_sans_prolight', Helvetica, Arial, sans-serif!important;
-    font-weight: 100;
+    font-family: 'Montserrat' !important;
+    font-weight: 400;
 }
 
 .font-regular {
@@ -286,7 +287,7 @@ body {
 }
 
 .font-bold {
-    font-family: 'source_sans_probold', Helvetica, Arial, sans-serif!important;
+    font-family: 'Montserrat' !important;
     font-weight: 700;
 }
 
@@ -1027,7 +1028,7 @@ video {
 }
 
 #headline span {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat';
     text-shadow: black 0px 0px 10px;
 }
 
@@ -1037,10 +1038,10 @@ video {
     background-image: url(../img/play.png);
     z-index: 200;
     margin: auto;
-    position: relative;
-    top: 650px;
+    position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 2rem;
     right: 0;
     cursor: pointer;
     opacity: .75;
@@ -2154,11 +2155,12 @@ div#footer {
 #risk-disclaimer {
     color: #c1c1c1;
     font-size: 12px;
-    padding: 50px 100px 50px 100px;
+    padding: 45px 20px;
     line-height: 20px;
     text-align: center;
     max-width: 890px;
     margin: 0 auto;
+    min-width: 220px;
 }
 
 #risk-disclaimer strong {
@@ -2912,4 +2914,27 @@ div#footer {
     #site-menu {
         text-align: center;    
     }
+}
+
+
+#Walkthrough h3 {
+    line-height: 2rem;
+    font-size: 2rem;
+    text-shadow: black 0px 0px 10px;
+}
+
+div#Walkthrough #videobox {
+    max-width: 600px;
+}
+.btn-header
+{
+	    z-index: 999999;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    top: 15rem;
+	    height: fit-content;
+	    margin: auto !important;
+	    display: inline-block !important;
 }

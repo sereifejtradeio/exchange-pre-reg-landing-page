@@ -2,6 +2,9 @@ $(document).ready(function() {
     AOS.init({
         disable: 'mobile'
     });
+	
+	var scroll = new SmoothScroll('a[href*="#"]');
+	
     var canvasDiv = document.getElementById('particle-canvas');
     var options = {
         particleColor: '#304277',

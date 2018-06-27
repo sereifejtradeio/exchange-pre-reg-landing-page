@@ -509,12 +509,12 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
     }
     
     #play {
-        top: -90px;
-        position: relative;
-        float: right;
-        left: auto;
-        right: 15px;
-        z-index: 9999999;
+        /* top: -90px; */
+        /* position: relative; */
+        /* float: right; */
+        /* left: auto; */
+        /* right: 15px; */
+        /* z-index: 9999999; */
     }
     
     .container .socialbar {
@@ -555,12 +555,12 @@ box-shadow:#d76468 0px 0px 10px 0px !important;
 @media only screen and (max-width: 467px)
 {
     #play {
-        top: -90px;
-        position: relative;
-        float: right;
-        left: auto;
-        right: 15px;
-        z-index: 9999999;
+        /* top: -90px; */
+        /* position: relative; */
+        /* float: right; */
+        /* left: auto; */
+        /* right: 15px; */
+        /* z-index: 9999999; */
     }
     
     

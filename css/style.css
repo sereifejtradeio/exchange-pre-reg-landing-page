@@ -2936,7 +2936,8 @@ div#Walkthrough #videobox {
 	    left: 0;
 	    right: 0;
 	    top: 15rem;
-	    height: fit-content;
+	    height: 22px;
 	    margin: auto !important;
 	    display: inline-block !important;
+        max-width: 330px;
 }

@@ -256,8 +256,11 @@ a.btn.btn--alt.menu-btn {
 
   margin: auto;
   text-align: center;
-  width: 330px;
   margin-top: 20px;
+}
+
+#pre-register-bottom-btn {
+    width: 320px;
 }
 
 .field-left {

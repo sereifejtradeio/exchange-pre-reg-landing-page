@@ -161,7 +161,7 @@
         <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"/>
         <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"/>
         <!-- Jquery Framework -->
-        <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <!--Particles Entrty-->
         <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
         <!--Google reCaptcha-->
@@ -183,7 +183,7 @@
         <!-- trade.io API-->
         <script type="text/javascript" src="api2/api.js"></script>
         <!--AOS library-->
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="js/aos.js"></script>
 		<script src="js/smoothscroll.js"></script>
 
         <!-- Google Tag Manager -->

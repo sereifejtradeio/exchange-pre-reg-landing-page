@@ -1,0 +1,92 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteBase /
+
+# Force search engines to use new-120adv-website.herokuapp.com
+#RewriteCond %{HTTP_HOST} !^dare-to-share-landing-page.herokuapp.com$
+#RewriteRule ^(.*) https://dare-to-share-landing-page.herokuapp.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^dare-to-share.trade.io$
+#RewriteRule ^(.*) http://dare-to-share.trade.io/$1 [R=301,L]
+
+#AuthType Basic
+#AuthName "restricted area"
+##AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/dare-to-share.trade.io/.htpasswd
+#AuthUserFile /app/dare-to-share/.htpasswd
+#require valid-user
+
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/tab-separated-values .tsv
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+AddType image/svg+xml .svg
+AddType video/mp4 .f4v .f4p
+AddType video/webm .webm
+ExpiresByType application/vnd.ms-fontobject "access 1 year"
+ExpiresByType application/x-font-ttf "access 1 year"
+ExpiresByType application/x-font-opentype "access 1 year"
+ExpiresByType application/x-font-woff "access 1 year"
+ExpiresByType application/x-font-woff2 "access 1 year"
+ExpiresByType image/svg+xml "access 1 year"
+ExpiresByType text/html "access 1 hour"
+ExpiresByType text/plain "access 1 hour"
+ExpiresByType text/css "access 14 days"
+ExpiresByType text/x-javascript "access 3 weeks"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/json "access 14 days"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType image/gif "access 2 months"
+ExpiresByType image/png "access 2 months"
+ExpiresByType image/jpg "access 2 months"
+ExpiresByType image/jpeg "access 2 months"
+ExpiresByType image/webp "access 2 months"
+ExpiresByType video/ogg "access 2 months"
+ExpiresByType video/webm "access 2 months"
+ExpiresByType video/mp4 "access 2 months"
+ExpiresByType application/pdf "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>

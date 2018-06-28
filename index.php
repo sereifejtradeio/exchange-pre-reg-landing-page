@@ -303,8 +303,8 @@
             <div class="layer"></div>
             <div class="gradient-video"></div>
             <video playsinline="" autoplay="" muted="" loop="" poster="" id="bgvid">
-               <source src="video/loop_2.webm" type="video/webm">
-               <source src="video/loop_2.mp4" type="video/mp4">
+               <source src="https://tradeio-marketing-cdn.azureedge.net/exchange-trade-io/loop_2.webm" type="video/webm">
+               <source src="https://tradeio-marketing-cdn.azureedge.net/exchange-trade-io/loop_2.mp4" type="video/mp4">
             </video>
 
             <!-- template thumbnails wrapper

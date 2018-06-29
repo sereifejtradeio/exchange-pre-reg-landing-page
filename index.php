@@ -162,6 +162,8 @@
         <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"/>
         <!-- Jquery Framework -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Jquery Cookie -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
         <!--Particles Entrty-->
         <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
         <!--Google reCaptcha-->
@@ -209,6 +211,12 @@
          </div>
       </div>
       <!-- the start of the website -->
+       <div id="news-notification-container">
+           <div id="news-notification">
+               <a href="https://trade.io/future-of-cryptocurrencies/" target="_blank" rel="noopener"><img src="img/bloomberg_event.jpg"/></a>
+           </div>
+           <div id="news-notification-close-button"><i class="fa fa-window-close"></i></div>
+       </div>
       <div class="stack">
          <!-- header -->
          <div id="header" style="opacity: 1;">

@@ -10,7 +10,7 @@
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
-    $ip = '46.103.255.255';
+//    $ip = '46.103.255.255';
 
     $record = $reader->country($ip);
 
@@ -213,7 +213,7 @@
       <!-- the start of the website -->
        <div id="news-notification-container">
            <div id="news-notification">
-               <a href="https://trade.io/future-of-cryptocurrencies/" target="_blank" rel="noopener"><img src="img/bloomberg_event.jpg"/></a>
+               <a href="https://www.facebook.com/trade.io" target="_blank" rel="noopener"><img src="img/fb-banner.jpg"/></a>
            </div>
            <div id="news-notification-close-button"><i class="fa fa-window-close"></i></div>
        </div>

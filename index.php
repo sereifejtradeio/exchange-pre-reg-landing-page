@@ -126,6 +126,12 @@ $ip = '46.103.255.255';
 
         header("Location: ?lang={$lang}{$utm_parameters}");
     }
+
+function getFullURL() {
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+    $full_url = $protocol."://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    return $full_url;
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $lang == 'ar' ? 'rtl' : 'ltr' ?>">
@@ -512,7 +518,7 @@ $ip = '46.103.255.255';
                      <div id="json-register-error-bottom"></div>
                      <div id="json-register-success-bottom"><?php echo L::section7_json_register_success; ?></div>
                      <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
-                     <input type="hidden" name="registration_source" id="registration_source_bottom" value="Exchange-Pre-Registration">
+                     <input type="hidden" name="registration_source" id="registration_source_bottom" value="<?php echo getFullURL();?>">
                       <input type="hidden" name="user_language_bottom" id="user_language_bottom" value="<?php echo $languageFullName[$lang]; ?>">
                       <input type="hidden" name="utm_source_bottom" id="utm_source_bottom" value="<?php echo $utm_source; ?>">
                       <input type="hidden" name="utm_medium_bottom" id="utm_medium_bottom" value="<?php echo $utm_medium; ?>">

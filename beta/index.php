@@ -43,7 +43,7 @@
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="usp-container clearfix">
                         <div class="icon-container-left">
                             <div id="usp1-icon"></div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="usp-container clearfix">
                         <div class="icon-container-right">
                             <div id="usp2-icon"></div>
@@ -90,13 +90,13 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-6">
                 <div class="usp-line"></div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="usp-container clearfix">
                         <div class="icon-container-right">
                             <div id="usp3-icon"></div>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="usp-container clearfix">
                         <div class="icon-container-left">
                             <div id="usp4-icon"></div>

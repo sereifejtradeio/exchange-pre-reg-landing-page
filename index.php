@@ -10,7 +10,7 @@
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
-//$ip = '46.103.255.255';
+$ip = '46.103.255.255';
 
     $record = $reader->country($ip);
 

@@ -11,7 +11,7 @@ RewriteBase /
 
 AuthType Basic
 AuthName "restricted area"
-AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/exchange.trade.io/beta/.htpasswd
+AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/exchange/beta/.htpasswd
 #AuthUserFile /app/.htpasswd
 require valid-user
 
@@ -90,4 +90,3 @@ ExpiresByType application/x-shockwave-flash "access 1 year"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 2 days"
 </IfModule>
-

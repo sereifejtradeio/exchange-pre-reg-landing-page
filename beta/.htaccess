@@ -11,8 +11,8 @@ RewriteBase /
 
 AuthType Basic
 AuthName "restricted area"
-AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/exchange/beta/.htpasswd
-#AuthUserFile /app/.htpasswd
+#AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/exchange/beta/.htpasswd
+AuthUserFile /app/beta/.htpasswd
 require valid-user
 
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">

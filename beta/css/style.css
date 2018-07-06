@@ -584,6 +584,77 @@ body {
     border-radius: 50%;
 }
 
+#section3 {
+    background-color: #fff;
+}
+
+.section-header-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.margin-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.blue-text-color {
+    color: #17194e;
+}
+
+.white-text-color {
+    color: #ffffff;
+}
+
+#usp-icon1 {
+    background: url('../images/usp-icon1.png');
+    width: 105px;
+    height: 104px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#usp-icon2 {
+    background: url('../images/usp-icon2.png');
+    width: 105px;
+    height: 104px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#usp-icon3 {
+    background: url('../images/usp-icon3.png');
+    width: 105px;
+    height: 104px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.usp-icon1-title,
+.usp-icon2-title,
+.usp-icon3-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.usp-icon1-text,
+.usp-icon2-text,
+.usp-icon3-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -714,6 +785,10 @@ body {
     .circle-reverse-4 {
         display: none;
     }
+
+    .be-the-first-to-sign-up-usp-container {
+        margin-bottom: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -725,6 +800,10 @@ body {
 @media only screen and (max-width : 480px) {
     #video-play-btn {
         top: 115px;
+    }
+
+    .usp-title {
+        font-size: 1.5rem;
     }
 }
 

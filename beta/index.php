@@ -41,103 +41,101 @@
     </div>
 </div>
 <div class="row no-gutters" id="section2">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="usp-container clearfix">
-                        <div class="icon-container-left">
-                            <div id="usp1-icon"></div>
-                            <div id="usp1-line"></div>
-                            <div class="circle-1">
-                                <span>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="usp-container clearfix">
+                    <div class="icon-container-left">
+                        <div id="usp1-icon"></div>
+                        <div id="usp1-line"></div>
+                        <div class="circle-1">
+                            <span>
 
-                                </span>
-                            </div>
+                            </span>
                         </div>
-                        <div class="ups-text-container-left">
-                            <div class="usp-title text-align-left">
-                                The industry's only fully<br/>
-                                customizable platform
-                            </div>
-                            <div class="usp-description text-align-left">
-                                With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
-                            </div>
+                    </div>
+                    <div class="ups-text-container-left">
+                        <div class="usp-title text-align-left">
+                            The industry's only fully<br/>
+                            customizable platform
+                        </div>
+                        <div class="usp-description text-align-left">
+                            With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="usp-container clearfix">
-                        <div class="icon-container-right">
-                            <div id="usp2-icon"></div>
-                            <div id="usp2-line"></div>
-                            <div class="circle-2">
-                                <span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="usp-container clearfix">
+                    <div class="icon-container-right">
+                        <div id="usp2-icon"></div>
+                        <div id="usp2-line"></div>
+                        <div class="circle-2">
+                            <span>
 
-                                </span>
-                            </div>
+                            </span>
                         </div>
-                        <div class="ups-text-container-right">
-                            <div class="usp-title text-align-right">
-                                The industry's only fully<br/>
-                                customizable platform
-                            </div>
-                            <div class="usp-description text-align-right">
-                                With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
-                            </div>
+                    </div>
+                    <div class="ups-text-container-right">
+                        <div class="usp-title text-align-right">
+                            The industry's only fully<br/>
+                            customizable platform
+                        </div>
+                        <div class="usp-description text-align-right">
+                            With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row no-gutters">
-            <div class="col-lg-12 col-md-12 col-sm-6">
-                <div class="usp-line"></div>
-            </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-lg-12 col-md-12 col-sm-6">
+            <div class="usp-line"></div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="usp-container clearfix">
-                        <div class="icon-container-right">
-                            <div id="usp3-icon"></div>
-                            <div id="usp3-line"></div>
-                            <div class="circle-reverse-3">
-                                <span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="usp-container clearfix">
+                    <div class="icon-container-right">
+                        <div id="usp3-icon"></div>
+                        <div id="usp3-line"></div>
+                        <div class="circle-reverse-3">
+                            <span>
 
-                                </span>
-                            </div>
+                            </span>
                         </div>
-                        <div class="ups-text-container-right">
-                            <div class="usp-title text-align-right">
-                                The industry's only fully<br/>
-                                customizable platform
-                            </div>
-                            <div class="usp-description text-align-right">
-                                With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
-                            </div>
+                    </div>
+                    <div class="ups-text-container-right">
+                        <div class="usp-title text-align-right">
+                            The industry's only fully<br/>
+                            customizable platform
+                        </div>
+                        <div class="usp-description text-align-right">
+                            With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="usp-container clearfix">
-                        <div class="icon-container-left">
-                            <div id="usp4-icon"></div>
-                            <div id="usp4-line"></div>
-                            <div class="circle-reverse-4">
-                                <span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="usp-container clearfix">
+                    <div class="icon-container-left">
+                        <div id="usp4-icon"></div>
+                        <div id="usp4-line"></div>
+                        <div class="circle-reverse-4">
+                            <span>
 
-                                </span>
-                            </div>
+                            </span>
                         </div>
-                        <div class="ups-text-container-left">
-                            <div class="usp-title text-align-left">
-                                The industry's only fully<br/>
-                                customizable platform
-                            </div>
-                            <div class="usp-description text-align-left">
-                                With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
-                            </div>
+                    </div>
+                    <div class="ups-text-container-left">
+                        <div class="usp-title text-align-left">
+                            The industry's only fully<br/>
+                            customizable platform
+                        </div>
+                        <div class="usp-description text-align-left">
+                            With powerful flexibility you can create your perfect trading environment in just a few minutes after signing up, without compromising on performance or speed.
                         </div>
                     </div>
                 </div>
@@ -145,5 +143,37 @@
         </div>
     </div>
 </div>
+
+<div class="row no-gutters" id="section3">
+    <div class="container margin-100">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-header-title"><h1 class="blue-text-color">Be the first<br/>to sign up</h1></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="be-the-first-to-sign-up-usp-container">
+                    <div id="usp-icon1"></div>
+                    <div class="usp-icon1-title blue-text-color">Easy Account<br/>Verification</div>
+                    <div class="usp-icon1-text blue-text-color">Efficient onboarding of all new clients. Less groan, more yay!</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="be-the-first-to-sign-up-usp-container">
+                    <div id="usp-icon2"></div>
+                    <div class="usp-icon2-title blue-text-color">24/7 Responsive<br/>Support</div>
+                    <div class="usp-icon2-text blue-text-color">Our support specialists are on available 24/7 by email, or live chat, so you can get answers in minutes to any issues you might face.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="be-the-first-to-sign-up-usp-container">
+                    <div id="usp-icon3"></div>
+                    <div class="usp-icon3-title blue-text-color">Secure Trading<br/>Environment</div>
+                    <div class="usp-icon3-text blue-text-color">Multi-layered sign-in authentication and 24/7 monitoring by in-house cybersecurity team.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

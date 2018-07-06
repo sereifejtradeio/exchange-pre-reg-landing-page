@@ -11,7 +11,7 @@
             crossorigin="anonymous"></script>
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -174,6 +174,28 @@
         </div>
     </div>
 </div>
+
+<div class="row no-gutters infographic-bg" id="section4">
+    <div class="container margin-100">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 pull-right">
+                <div id="why-you-will-love-our-exchange-container">
+                    <div id="why-you-will-love-our-exchange-title"><h1>Why you will love<br/> our exchange</h1></div>
+                    <div id="why-you-will-love-our-exchange-points">
+                        <ul>
+                            <li>Clean and crisp layout</li>
+                            <li>Customizable/Movable widgets</li>
+                            <li>Create and save up to 10 preset layouts(multi-screen compatible)</li>
+                            <li>Customizable profile, newsfeed, chat and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

@@ -655,6 +655,56 @@ body {
     text-align: center;
 }
 
+.section4 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181339+0,171a53+21,171749+46,19102d+100 */
+    background: rgb(24,19,57); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(24,19,57,1) 0%, rgba(23,26,83,1) 21%, rgba(23,23,73,1) 46%, rgba(25,16,45,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(24,19,57,1) 0%,rgba(23,26,83,1) 21%,rgba(23,23,73,1) 46%,rgba(25,16,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(24,19,57,1) 0%,rgba(23,26,83,1) 21%,rgba(23,23,73,1) 46%,rgba(25,16,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181339', endColorstr='#19102d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.infographic-bg {
+    background: url('../images/infographic-bg.png');
+    width: 100%;
+    height: 908px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#why-you-will-love-our-exchange-container {
+    margin-top: 80px;
+}
+
+#why-you-will-love-our-exchange-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: right;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#why-you-will-love-our-exchange-points {
+    margin-top: 30px;
+}
+
+#why-you-will-love-our-exchange-points ul {
+    padding-right: 25px;
+    margin: 0;
+}
+
+#why-you-will-love-our-exchange-points li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: right;
+    color: #ffffff;
+    line-height: 4.5rem;
+    direction: rtl;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -788,6 +838,24 @@ body {
 
     .be-the-first-to-sign-up-usp-container {
         margin-bottom: 30px;
+    }
+
+    .infographic-bg {
+        background: none;
+        height: auto;
+    }
+
+    #why-you-will-love-our-exchange-title h1 {
+        text-align: center;
+    }
+
+    #why-you-will-love-our-exchange-points ul {
+        padding-right: auto;
+    }
+
+    #why-you-will-love-our-exchange-points li {
+        text-align: left;
+        direction: ltr;
     }
 }
 

@@ -142,7 +142,7 @@ body {
 .usp-description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #ffffff;
     margin-top: 10px;
 }
@@ -597,9 +597,18 @@ body {
     margin-bottom: 50px;
 }
 
-.margin-100 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.section-subheader-title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .blue-text-color {
@@ -674,7 +683,7 @@ body {
 }
 
 #why-you-will-love-our-exchange-container {
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 #why-you-will-love-our-exchange-title h1 {
@@ -703,6 +712,93 @@ body {
     color: #ffffff;
     line-height: 4.5rem;
     direction: rtl;
+}
+
+#section5 {
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0000+0,161b57+50,0e0000+100 */
+    background: rgb(14,0,0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(14,0,0,1) 0%, rgba(22,27,87,1) 50%, rgba(14,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(14,0,0,1) 0%,rgba(22,27,87,1) 50%,rgba(14,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(14,0,0,1) 0%,rgba(22,27,87,1) 50%,rgba(14,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0000', endColorstr='#0e0000',GradientType=1 ); /* IE6-9 */
+}
+
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 999px 100px rgb(0,1,59,0.9) inset;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16153b+0,161b57+50,16153b+100 */
+    background: rgb(22,21,59); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(22,21,59,1) 0%, rgba(22,27,87,1) 50%, rgba(22,21,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(22,21,59,1) 0%,rgba(22,27,87,1) 50%,rgba(22,21,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(22,21,59,1) 0%,rgba(22,27,87,1) 50%,rgba(22,21,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16153b', endColorstr='#16153b',GradientType=0 ); /* IE6-9 */
+}
+
+.dot {
+    background-image: url("../images/dot.png");
+    background-repeat: repeat;
+    opacity: 1;
+    /*background-color: #161336;*/
+    position: relative;
+}
+
+#video-thumbnail {
+    background-image: url("../images/video-thumbnail.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 499px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.education-video-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#education-video1 {
+    background-image: url("../images/education-video1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 287px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#education-video2 {
+    background-image: url("../images/education-video2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 287px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#education-video3 {
+    background-image: url("../images/education-video3.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 287px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.education-video-container {
+    padding: 25px;
 }
 
 /*==================================================

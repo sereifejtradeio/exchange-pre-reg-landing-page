@@ -145,7 +145,7 @@
 </div>
 
 <div class="row no-gutters" id="section3">
-    <div class="container margin-100">
+    <div class="container padding-100">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="section-header-title"><h1 class="blue-text-color">Be the first<br/>to sign up</h1></div>
@@ -176,7 +176,7 @@
 </div>
 
 <div class="row no-gutters infographic-bg" id="section4">
-    <div class="container margin-100">
+    <div class="container padding-100">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12"></div>
             <div class="col-lg-6 col-md-6 col-sm-12 pull-right">
@@ -190,6 +190,49 @@
                             <li>Customizable profile, newsfeed, chat and more</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row no-gutters" id="section5">
+    <div class="vignette dot">
+        <div class="container padding-100">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header-title"><h1 class="white-text-color">WALKTRHOUGH OF OUR<br/>BETA EXCHANGE PLATFORM</h1></div>
+                    <div id="video-thumbnail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters" id="section6">
+    <div class="container padding-100">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-header-title"><h1 class="white-text-color">Free Crypto Education</h1></div>
+                <div class="section-subheader-title"><h3 class="white-text-color">EXCHANGE CRYPTO TRADING<br/>TRAINING SERIES</h3></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="education-video-container">
+                    <div class="education-video-title">Researching The Coins</div>
+                    <div id="education-video1"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="education-video-container">
+                    <div class="education-video-title">Leaving The Trade</div>
+                    <div id="education-video2"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="education-video-container">
+                    <div class="education-video-title">Trading Different Cryptocurrency Types</div>
+                    <div id="education-video3"></div>
                 </div>
             </div>
         </div>

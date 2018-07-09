@@ -239,6 +239,56 @@
     </div>
 </div>
 
+<div class="row no-gutters" id="section7">
+    <div class="container padding-top-100">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-header-title"><h1 class="blue-text-color"> The trading revolution<br/>has begun! </h1></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div id="trading-revolution"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div id="trading-revolution-form-container">
+                    <form action="" method="post" id="trading-revolution-form">
+                        <div class="input-container">
+                            <h1 id="trading-revolution-pre-register-title">Pre-Register Now</h1>
+                        </div>
+                        <div class="input-container">
+                            <label>Username</label><br/>
+                            <input type="text" id="username" name="username"/>
+                        </div>
+                        <div class="input-container">
+                            <label>Email</label><br/>
+                            <input type="text" id="email" name="email"/>
+                        </div>
+                        <div class="input-container">
+                            <label>Password</label><br/>
+                            <input type="password" id="password" name="password"/>
+                        </div>
+                        <div class="input-container">
+                            <label>Re-type Password</label><br/>
+                            <input type="password" id="confirm-password" name="confirm-password"/>
+                        </div>
+                        <div class="input-container">
+                            <label></label><br/>
+                            <div id="trading-revolution-register-btn"><button>Pre-Register</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters" id="section8">
+    <div class="container padding-100">
+        <div class="row">
+
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

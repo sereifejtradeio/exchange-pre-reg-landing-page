@@ -905,6 +905,8 @@ body {
     /*background-repeat: no-repeat;*/
     width: 270px;
     height: auto;
+    position: absolute;
+    left: -75px;
     /*background-position: left;*/
     /*background-size: contain;*/
     /*float: left;*/
@@ -918,6 +920,8 @@ body {
     /*background-repeat: no-repeat;*/
     width: 270px;
     height: auto;
+    position: absolute;
+    right: -75px;
     /*background-position: right;*/
     /*background-size: contain;*/
     /*float: right;*/
@@ -939,13 +943,13 @@ body {
 }
 
 .c-fp-footer__corner.is-left {
-    right: 100%;
-    margin-right: -0.09em;
+    left: 0;
+    /*margin-right: -0.09em;*/
 }
 
 .c-fp-footer__corner.is-right {
-    left: 100%;
-    margin-left: -0.09em;
+    right: 0;
+    /*margin-left: -0.09em;*/
 }
 
 .c-fp-footer__symbolics {
@@ -1133,11 +1137,11 @@ body {
     animation: c-fp-footer__light 2s linear infinite;
 }
 .c-fp-footer__light.is-left {
-    left: 0;
+    left: 131px;
 }
 
 .c-fp-footer__light.is-right {
-    right: 0;
+    right: 131px;
 }
 
 /*==================================================

@@ -890,6 +890,39 @@ body {
     text-transform: uppercase;
 }
 
+#section8 {
+    /*background-color: #191130;*/
+    background-image: url("../images/footer-net.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1096px;
+    background-size: contain;
+}
+
+#left-engine {
+    background-image: url("../images/left-footer-bg.png");
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 734px;
+    background-position: left;
+    background-size: contain;
+    float: left;
+}
+
+#right-engine {
+    background-image: url("../images/right-footer-bg.png");
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 734px;
+    background-position: right;
+    background-size: contain;
+    float: right;
+}
+
+#center-engine {
+    width: 100%;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/

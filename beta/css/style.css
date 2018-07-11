@@ -615,6 +615,10 @@ body {
     padding-top: 100px;
 }
 
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+
 .blue-text-color {
     color: #17194e;
 }
@@ -891,7 +895,7 @@ body {
 }
 
 #section8 {
-    background-color: #191130;
+    /*background-color: #191130;*/
     background-image: url("../images/footer-net.png");
     background-repeat: no-repeat;
     width: 100%;
@@ -1165,6 +1169,28 @@ body {
     letter-spacing:1px
 }
 
+#social-media-container {
+    position: absolute;
+    bottom: -85px;
+    right: 50px;
+}
+
+#facebook-icon {
+    background-image: url("../images/facebook-icon.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+}
+
+#twitter-icon {
+    background-image: url("../images/twitter-icon.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -1370,6 +1396,13 @@ body {
 
     .usp-title {
         font-size: 1.5rem;
+    }
+
+    #gReCaptcha {
+        transform:scale(0.8);
+        -webkit-transform:scale(0.8);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
     }
 }
 

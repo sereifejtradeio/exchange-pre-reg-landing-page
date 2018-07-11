@@ -12,6 +12,12 @@ $( document ).ready(function() {
         //openVideo();
     });
 
+    $("#pre-register-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#section7").offset().top
+        }, 2500);
+    });
+
     function validateEmail(email){
         var regex=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email)

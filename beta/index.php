@@ -344,7 +344,7 @@ function getFullURL() {
             <span></span>
         </div>
         <div id="center-engine">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div id="trade-io-coin"></div>
                 </div>
@@ -373,7 +373,15 @@ function getFullURL() {
             <span></span>
         </div>
     </div>
+
+
+    <div id="social-media-container">
+        <a href="#"><div id="facebook-icon"></div></a>
+        <a href="#"><div id="twitter-icon"></div></a>
+    </div>
+
 </div>
+
 <script>
     var recaptcha1;
 

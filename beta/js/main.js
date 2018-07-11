@@ -192,7 +192,7 @@ $( document ).ready(function() {
                         this.reset();
                     });
 
-                    Google Tag Manager Data Layer Push Event
+                    //Google Tag Manager Data Layer Push Event
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         event: 'formSubmissionSuccess',

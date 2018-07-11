@@ -1,21 +1,48 @@
+<?php
+function check_start_session() {
+    if(!session_id()) {
+        session_start();
+    }
+}
+
+function set_csrf_token() {
+    $_SESSION['previous_csrf_token'] = $_SESSION['csrf_token'];
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+check_start_session();
+set_csrf_token();
+
+// Get utm parameters
+$utm_source = filter_input(INPUT_GET, 'utm_source', FILTER_SANITIZE_ENCODED);
+$utm_medium = filter_input(INPUT_GET, 'utm_medium', FILTER_SANITIZE_ENCODED);
+$utm_campaign = filter_input(INPUT_GET, 'utm_campaign', FILTER_SANITIZE_ENCODED);
+$utm_term = filter_input(INPUT_GET, 'utm_term', FILTER_SANITIZE_ENCODED);
+$utm_content = filter_input(INPUT_GET, 'utm_content', FILTER_SANITIZE_ENCODED);
+
+function getFullURL() {
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+    $full_url = $protocol."://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    return $full_url;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>trade.io - Beta Exchange Platform - &amp; Pre-Registration</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--Google reCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
@@ -255,23 +282,48 @@
                 <div id="trading-revolution-form-container">
                     <form action="" method="post" id="trading-revolution-form">
                         <div class="input-container">
+                            <div id="json-register-error"></div>
+                            <div id="json-register-success">Thank you for registering!</div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="hidden" name="csrf_token" id="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                            <input type="hidden" name="registration_source" id="registration_source" value="<?php echo getFullURL();?>">
+                            <input type="hidden" name="user_language" id="user_language" value="<?php echo $languageFullName[$lang]; ?>">
+                            <input type="hidden" name="utm_source" id="utm_source" value="<?php echo $utm_source; ?>">
+                            <input type="hidden" name="utm_medium" id="utm_medium" value="<?php echo $utm_medium; ?>">
+                            <input type="hidden" name="utm_campaign" id="utm_campaign" value="<?php echo $utm_campaign; ?>">
+                            <input type="hidden" name="utm_term" id="utm_term" value="<?php echo $utm_term; ?>">
+                            <input type="hidden" name="utm_content" id="utm_content" value="<?php echo $utm_content; ?>">
+                        </div>
+
+                        <div class="input-container">
                             <h1 id="trading-revolution-pre-register-title">Pre-Register Now</h1>
                         </div>
                         <div class="input-container">
                             <label>Username</label><br/>
                             <input type="text" id="username" name="username"/>
+                            <div class="username_error">*Username cannot be empty!</div>
                         </div>
                         <div class="input-container">
                             <label>Email</label><br/>
                             <input type="text" id="email" name="email"/>
+                            <div class="email_error">*Email is invalid!</div>
                         </div>
                         <div class="input-container">
                             <label>Password</label><br/>
                             <input type="password" id="password" name="password"/>
+                            <div class="password_error">*Password must have 8 chars, one lowercase, one uppercase, one number, and one special character!</div>
                         </div>
                         <div class="input-container">
                             <label>Re-type Password</label><br/>
-                            <input type="password" id="confirm-password" name="confirm-password"/>
+                            <input type="password" id="confirm_password" name="confirm_password"/>
+                            <div class="confirm_password_error">*Repeat Password must have 8 chars, one lowercase, one uppercase, one number, and one special character!</div>
+                            <div class="passwords_do_not_match_error">*Password and Repeat password do not match!</div>
+                        </div>
+                        <div class="input-container">
+                            <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptcha"></div>
+                            <div class="captcha_error">Invalid Captcha!</div>
                         </div>
                         <div class="input-container">
                             <label></label><br/>
@@ -322,5 +374,20 @@
         </div>
     </div>
 </div>
+<script>
+    var recaptcha1;
+
+    var myCallBack = function() {
+
+        if( document.getElementById('gReCaptcha') !=null ) {
+            //Render the recaptcha1 on the element with ID "recaptcha1"
+            recaptcha1 = grecaptcha.render('gReCaptcha', {
+                'sitekey' : '6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8', //Replace this with your Site key
+                'theme' : 'light'
+            });
+        }
+
+    };
+</script>
 </body>
 </html>

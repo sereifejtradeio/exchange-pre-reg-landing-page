@@ -1191,6 +1191,11 @@ body {
     display: inline-block;
 }
 
+.wistia_click_to_play {
+    position: inherit !important;
+
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/

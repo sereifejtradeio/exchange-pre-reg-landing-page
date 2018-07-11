@@ -59,7 +59,12 @@ function getFullURL() {
                     <h3>IS NOW OPEN FOR PRE REGISTRATION</h3>
                 </div>
                 <div class="row">
-                    <div id="video-play-btn"></div>
+
+                    <script src="https://fast.wistia.com/embed/medias/mjb7ge00az.jsonp" async></script>
+                    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                    <span class="wistia_embed wistia_async_mjb7ge00az popover=true popoverContent=link">
+                        <a href="#"><div id="video-play-btn"></div></a></span>
+
                 </div>
                 <div class="row">
                     <div id="pre-register-btn"><button>Pre-Register</button></div>
@@ -229,7 +234,7 @@ function getFullURL() {
                     <div class="section-header-title">
                         <h1 class="white-text-color">WALKTRHOUGH OF OUR<br/>BETA EXCHANGE PLATFORM</h1>
                     </div>
-                    <div id="video-thumbnail"></div>
+                    <script src="https://fast.wistia.com/embed/medias/2ecti34i8s.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_2ecti34i8s popover=true popoverContent=link"><a href="#"><div id="video-thumbnail"></div></a></span>
                 </div>
             </div>
         </div>
@@ -249,19 +254,20 @@ function getFullURL() {
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="education-video-container">
                     <div class="education-video-title">Researching The Coins</div>
-                    <div id="education-video1"></div>
+                    <script src="https://fast.wistia.com/embed/medias/34dl1yxs5x.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding"><div class="wistia_responsive_wrapper"><span class="wistia_embed wistia_async_34dl1yxs5x popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true"><a href="#"><div id="education-video1"></div></a></span></div></div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="education-video-container">
                     <div class="education-video-title">Leaving The Trade</div>
-                    <div id="education-video2"></div>
+                    <script src="https://fast.wistia.com/embed/medias/667oblhh00.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding"><div class="wistia_responsive_wrapper"><span class="wistia_embed wistia_async_667oblhh00 popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true"><a href="#"><div id="education-video2"></div></a></span></div></div>
+
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="education-video-container">
                     <div class="education-video-title">Trading Different Cryptocurrency Types</div>
-                    <div id="education-video3"></div>
+                    <script src="https://fast.wistia.com/embed/medias/ewcmvqsj7z.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding"><div class="wistia_responsive_wrapper"><span class="wistia_embed wistia_async_ewcmvqsj7z popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true"><a href="#"><div id="education-video3"></div></a></span></div></div>
                 </div>
             </div>
         </div>

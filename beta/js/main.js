@@ -1,17 +1,5 @@
 $( document ).ready(function() {
 
-    //Resize video on window resize
-    // $(window).resize(function(){
-    //     var winWidth = $(document).width();
-    //     var winHeight = $(document).height();
-    //     $('#header-video').css('width', winWidth);
-    //     $('#header-video').css('height', winHeight);
-    // });
-
-    $('#video-play-btn').click(function(){
-        //openVideo();
-    });
-
     $("#pre-register-btn").click(function() {
         $('html, body').animate({
             scrollTop: $("#section7").offset().top
@@ -168,12 +156,7 @@ $( document ).ready(function() {
 
                         $.each(obj.error, function(i, item) {
 
-                            //$(".top_form_" + item.element + "_error").html('');
-
-                            //$(".top_form_" + item.element + "_error").append('*' + item.message + '<br/>');
-
                             $("." + item.element + "_error").show();
-
                         });
 
                     } else {
@@ -209,13 +192,13 @@ $( document ).ready(function() {
                         this.reset();
                     });
 
-                    //Google Tag Manager Data Layer Push Event
-                    // window.dataLayer = window.dataLayer || [];
-                    // window.dataLayer.push({
-                    //     event: 'formSubmissionSuccess',
-                    //     formId: 'TopForm',
-                    //     formName: 'Airdrops May \'18'
-                    // });
+                    Google Tag Manager Data Layer Push Event
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: 'formSubmissionSuccess',
+                        formId: 'BottomForm',
+                        formName: 'Exchange version B'
+                    });
                     grecaptcha.reset(recaptcha1);
 
                 }

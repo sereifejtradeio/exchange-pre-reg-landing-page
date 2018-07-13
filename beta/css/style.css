@@ -708,7 +708,7 @@ body {
 }
 
 #why-you-will-love-our-exchange-points ul {
-    padding-right: 25px;
+    /*padding-right: 25px;*/
     margin: 0;
 }
 
@@ -719,7 +719,7 @@ body {
     text-align: right;
     color: #ffffff;
     line-height: 4.5rem;
-    direction: rtl;
+    list-style: none;
 }
 
 #section5 {

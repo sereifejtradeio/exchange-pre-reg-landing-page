@@ -3,7 +3,7 @@ $( document ).ready(function() {
     $("#pre-register-btn").click(function() {
         $('html, body').animate({
             scrollTop: $("#section7").offset().top
-        }, 2500);
+        }, 500);
     });
 
     function validateEmail(email){

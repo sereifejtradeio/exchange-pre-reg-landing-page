@@ -382,8 +382,8 @@ function getFullURL() {
 
 
     <div id="social-media-container">
-        <a href="#"><div id="facebook-icon"></div></a>
-        <a href="#"><div id="twitter-icon"></div></a>
+        <a href="https://www.facebook.com/trade.io" target="_blank" rel="noopener"><div id="facebook-icon"></div></a>
+        <a href="https://twitter.com/tradetoken" target="_blank" rel="noopener"><div id="twitter-icon"></div></a>
     </div>
 
 </div>

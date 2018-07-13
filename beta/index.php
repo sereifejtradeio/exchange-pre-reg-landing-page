@@ -208,7 +208,7 @@ function getFullURL() {
     <div class="container padding-100">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12"></div>
-            <div class="col-lg-6 col-md-6 col-sm-12 pull-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 why-you-will-love-our-exchange pull-right">
                 <div id="why-you-will-love-our-exchange-container">
                     <div id="why-you-will-love-our-exchange-title">
                         <h1>Why you will love<br/> our exchange</h1>

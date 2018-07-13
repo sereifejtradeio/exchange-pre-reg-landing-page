@@ -1345,8 +1345,9 @@ body {
     }
 
     #why-you-will-love-our-exchange-points li {
-        text-align: left;
+        text-align: center;
         direction: ltr;
+        list-style-position: inside;
     }
 
     #trading-revolution {
@@ -1395,6 +1396,10 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 85px;
+    }
+
+    .why-you-will-love-our-exchange.pull-right {
+        float: none !important;
     }
 }
 

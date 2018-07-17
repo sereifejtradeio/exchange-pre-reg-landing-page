@@ -4,6 +4,12 @@ $( document ).ready(function() {
         $('html, body').animate({
             scrollTop: $("#section7").offset().top
         }, 500);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'formSubmission',
+            formId: 'TopRegistrationButton',
+            formName: 'Exchange Pre-Registration Scroll Button'
+        });
     });
 
     function validateEmail(email){
@@ -196,8 +202,8 @@ $( document ).ready(function() {
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         event: 'formSubmissionSuccess',
-                        formId: 'BottomForm',
-                        formName: 'Exchange version B'
+                        formId: 'BottomRegistrationButton',
+                        formName: 'Exchange Pre-Registration Success'
                     });
                     grecaptcha.reset(recaptcha1);
 

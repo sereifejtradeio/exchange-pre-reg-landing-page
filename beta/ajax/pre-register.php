@@ -135,7 +135,8 @@ if ( hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']) || hash_equals($
     curl_setopt($ch, CURLOPT_POSTFIELDS, $request_json);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
-            'Authorization: Basic OjIyZDdkMjcwM2M3NjY3NDdiNDJkZWIyNjVmODQ1NWYzODExMWExMmNlYzE4MzkwOTI2YTUzMjgyOWFmOTg4ODM='
+            'Authorization: Basic OjIyZDdkMjcwM2M3NjY3NDdiNDJkZWIyNjVmODQ1NWYzODExMWExMmNlYzE4MzkwOTI2YTUzMjgyOWFmOTg4ODM=',
+            'Origin: https://signup.trade.io'
         )
     );
 

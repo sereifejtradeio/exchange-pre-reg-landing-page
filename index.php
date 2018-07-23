@@ -137,7 +137,7 @@ function getFullURL() {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>trade.io - Beta Exchange Platform - &amp; Pre-Registration</title>
+        <title>trade.io | Join the waiting list for the revolutionary crypto exchange</title>
         <meta name="robot" content="index,follow">
         <meta name="copyright" content="Copyright © <?php echo date('Y');?> trade.io. All Rights Reserved.">
         <meta name="author" content="">
@@ -305,7 +305,7 @@ function getFullURL() {
                         <div class="top_form_captcha_error"><?php echo L::error_msgs_captcha; ?></div>
                      </div>
                      <div class="clearfix">
-                        <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large"><?php echo L::section1_pre_register_btn; ?></button>
+                        <button type="submit" id="pre-register-top-btn" class="btn btn-primary btn-block btn-large"><?php //echo L::section1_pre_register_btn; ?></button>
                      </div>
                   </form>
                </div> -->
@@ -343,7 +343,7 @@ function getFullURL() {
 
                -->
 		 <div id="play"></div>
-		 <a href="#footer" id="" class="btn btn-primary btn-block btn-large btn-header">PRE-REGISTER</a>
+		 <a href="#footer" id="" class="btn btn-primary btn-block btn-large btn-header">JOIN WAITING LIST</a>
          </div>
          <!-- header simulation -->
 		  
@@ -546,7 +546,7 @@ function getFullURL() {
                         <div class="bottom_form_captcha_error"><?php echo L::error_msgs_captcha; ?></div>
                      </div>
                      <div class="clearfix">
-                        <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large"><?php echo L::section7_pre_register_btn; ?></button>
+                        <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large"><?php echo 'JOIN WAITING LIST';//echo L::section7_pre_register_btn; ?></button>
                      </div>
                   </form>
                </div>

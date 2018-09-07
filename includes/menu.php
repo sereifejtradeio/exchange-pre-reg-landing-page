@@ -60,4 +60,4 @@ $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
         background-color: #4996d2;
     }
 </style>
-<?php include('languages.php') ?>
+<?php //include('languages.php') ?>

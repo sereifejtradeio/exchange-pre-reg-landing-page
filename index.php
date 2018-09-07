@@ -9,7 +9,7 @@
     // Use special CloudFlare Headers to get real ip of user
     $ip = $_SERVER['REMOTE_ADDR'] = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'];
 
-    //$ip = '46.103.255.255';
+    $ip = '46.103.255.255';
 
     $record = $reader->country($ip);
 
@@ -137,7 +137,7 @@ function getFullURL() {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>trade.io | Join the waiting list for the revolutionary crypto exchange</title>
+        <title>trade.io | The trading revolution has begun</title>
         <meta name="robot" content="index,follow">
         <meta name="copyright" content="Copyright © <?php echo date('Y');?> trade.io. All Rights Reserved.">
         <meta name="author" content="">
@@ -343,12 +343,12 @@ function getFullURL() {
 
                -->
 		 <div id="play"></div>
-		 <a href="#footer" id="" class="btn btn-primary btn-block btn-large btn-header">JOIN WAITING LIST</a>
+		 <a href="https://exchange.trade.io" id="" class="btn btn-primary btn-block btn-large btn-header"><?php echo L::section1_pre_register_btn?></a>
          </div>
          <!-- header simulation -->
-		  
+
          <div id="header_blank"></div>
-		  
+
          <!-- introduction - 3 features -->
 		  <!--		  Start of Section-->
          <div id="pes" class="">
@@ -494,7 +494,7 @@ function getFullURL() {
                <div class="slogan" style="display: table;">
                   <h2><?php echo L::section7_title1; ?></h2>
                </div>
-               <h2 id="registerText"><?php echo L::section7_title2; ?></h2>
+               <h2 id="registerText"><?php //echo L::section7_title2; ?></h2>
                <div id="register-logo">
                   <div class="logo-btm"><a href="#"><img src="../img/footer-logo.png"></a></div>
                   <!-- <div class="register-btm"><a href="#" class="">Register a Free account</a></div> -->
@@ -512,43 +512,7 @@ function getFullURL() {
                   </script>
                   -->
                <div class="login">
-                  <!--	<h1>Pre-register Now</h1>-->
-                  <form method="post" class="RegisterForm" id="RegisterFormBottom" action="">
-                     <div id="json-register-error-bottom"></div>
-                     <div id="json-register-success-bottom"><?php echo L::section7_json_register_success; ?></div>
-                     <input type="hidden" name="csrf_token" id="csrf_token_bottom" value="<?php echo $_SESSION['csrf_token']; ?>">
-                     <input type="hidden" name="registration_source" id="registration_source_bottom" value="<?php echo getFullURL();?>">
-                      <input type="hidden" name="user_language_bottom" id="user_language_bottom" value="<?php echo $languageFullName[$lang]; ?>">
-                      <input type="hidden" name="utm_source_bottom" id="utm_source_bottom" value="<?php echo $utm_source; ?>">
-                      <input type="hidden" name="utm_medium_bottom" id="utm_medium_bottom" value="<?php echo $utm_medium; ?>">
-                      <input type="hidden" name="utm_campaign_bottom" id="utm_campaign_bottom" value="<?php echo $utm_campaign; ?>">
-                      <input type="hidden" name="utm_term_bottom" id="utm_term_bottom" value="<?php echo $utm_term; ?>">
-                      <input type="hidden" name="utm_content_bottom" id="utm_content_bottom" value="<?php echo $utm_content; ?>">
-                     <div class="field-left top-username">
-                        <input type="text" name="bottom_form_username" id="bottom_form_username" placeholder="<?php echo L::section7_username_placeholder; ?>" />
-                        <div class="bottom_form_username_error"><?php echo L::error_msgs_username; ?></div>
-                     </div>
-                     <div class="field-right top-email">
-                        <input type="email" name="bottom_form_email" id="bottom_form_email" placeholder="<?php echo L::section7_email_placeholder; ?>" />
-                        <div class="bottom_form_email_error"><?php echo L::error_msgs_email; ?></div>
-                     </div>
-                     <div class="field-left top-password">
-                        <input type="password" name="bottom_form_password" id="bottom_form_password" placeholder="<?php echo L::section7_password_placeholder; ?>" />
-                        <div class="bottom_form_password_error"><?php echo L::error_msgs_password; ?></div>
-                     </div>
-                     <div class="field-right top-confirm-password">
-                        <input type="password" name="bottom_form_confirm_password" id="bottom_form_confirm_password" placeholder="<?php echo L::section7_confirm_password_placeholder; ?>" />
-                        <div class="bottom_form_confirm_password_error"><?php echo L::error_msgs_confirm_password; ?></div>
-                        <div class="bottom_form_passwords_do_not_match_error"><?php echo L::error_msgs_passwords_do_not_match; ?></div>
-                     </div>
-                     <div class="top-captcha">
-                        <div class="g-recaptcha" data-sitekey="6Lehw1cUAAAAAA7blz3-HDTp4H_lsF547X1Hzjs8" id="gReCaptchaBottom"></div>
-                        <div class="bottom_form_captcha_error"><?php echo L::error_msgs_captcha; ?></div>
-                     </div>
-                     <div class="clearfix">
-                        <button type="submit" id="pre-register-bottom-btn" class="btn btn-primary btn-block btn-large"><?php echo 'JOIN WAITING LIST';//echo L::section7_pre_register_btn; ?></button>
-                     </div>
-                  </form>
+                   <a href="https://exchange.trade.io" id="" class="btn btn-primary btn-block btn-large btn-header">CREATE ACCOUNT</a>
                </div>
             </div>
             <div class="socialbar">

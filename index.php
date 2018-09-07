@@ -343,7 +343,7 @@ function getFullURL() {
 
                -->
 		 <div id="play"></div>
-		 <a href="https://exchange.trade.io" id="" class="btn btn-primary btn-block btn-large btn-header"><?php echo L::section1_pre_register_btn?></a>
+		 <a href="https://exchange.trade.io/auth/register" id="" class="btn btn-primary btn-block btn-large btn-header"><?php echo L::section1_pre_register_btn?></a>
          </div>
          <!-- header simulation -->
 
@@ -512,7 +512,7 @@ function getFullURL() {
                   </script>
                   -->
                <div class="login">
-                   <a href="https://exchange.trade.io" id="" class="btn btn-primary btn-block btn-large btn-header">CREATE ACCOUNT</a>
+                   <a href="https://exchange.trade.io/auth/register" id="" class="btn btn-primary btn-block btn-large btn-header">CREATE ACCOUNT</a>
                </div>
             </div>
             <div class="socialbar">
